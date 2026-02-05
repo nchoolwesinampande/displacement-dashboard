@@ -1,0 +1,501 @@
+beneficiary_id,registration_date,region,district,displacement_status,solutions_pathway,pathway_stage,household_size,gender_hoh,shelter_status,livelihood_support,documentation_status,latitude,longitude
+BEN-0001,2023-06-06,Baidoa,Baidoa Central,IDP,Return,Implementation,2,Male,Transitional,Yes,None,2.5796,43.4966
+BEN-0002,2024-11-10,Mogadishu,Yaqshid,Host Community,Relocation,Assessment,1,Male,Transitional,No,Complete,2.1081,45.3549
+BEN-0003,2023-12-25,Dollow,Luuq,IDP,Return,Planning,10,Male,Emergency,No,Partial,4.05,41.8959
+BEN-0004,2024-02-06,Baidoa,Dinsor,IDP,Local Integration,Achieved,4,Female,Permanent,No,Complete,2.4104,43.4246
+BEN-0005,2023-04-06,Baidoa,Baidoa Central,IDP,Return,Planning,6,Male,Transitional,No,Partial,2.5315,43.8135
+BEN-0006,2024-11-08,Kismayo,Badhadhe,IDP,Local Integration,Implementation,7,Male,Emergency,No,None,-0.5325,42.4056
+BEN-0007,2023-03-13,Garowe,Garowe Central,IDP,Return,Planning,4,Female,Transitional,Yes,Partial,8.5162,48.6902
+BEN-0008,2024-11-03,Kismayo,Kismayo Central,Returnee,Local Integration,Planning,12,Female,Permanent,No,Complete,-0.2649,42.4828
+BEN-0009,2023-06-05,Dollow,Luuq,Host Community,Relocation,Assessment,11,Male,Emergency,Yes,None,4.1005,42.3651
+BEN-0010,2024-05-08,Dollow,Dollow Town,Host Community,Local Integration,Implementation,9,Male,Emergency,No,None,4.1142,42.1242
+BEN-0011,2023-01-18,Kismayo,Kismayo Central,IDP,Local Integration,Implementation,9,Female,Emergency,No,Partial,-0.4821,42.3403
+BEN-0012,2024-07-11,Mogadishu,Hodan,IDP,Local Integration,Planning,5,Male,Emergency,No,None,1.9712,45.1151
+BEN-0013,2023-04-12,Baidoa,Baidoa Central,Returnee,Return,Achieved,9,Male,Transitional,Yes,Complete,2.6615,43.9179
+BEN-0014,2023-08-08,Kismayo,Badhadhe,IDP,Relocation,Achieved,9,Male,Permanent,Yes,Complete,-0.0796,42.8027
+BEN-0015,2024-09-08,Baidoa,Baidoa Central,Host Community,Local Integration,Implementation,12,Female,Emergency,Yes,None,2.2695,43.5526
+BEN-0016,2023-12-19,Baidoa,Baidoa Central,IDP,Local Integration,Planning,3,Female,Transitional,No,None,2.1751,43.3685
+BEN-0017,2024-03-06,Garowe,Burtinle,IDP,Return,Assessment,7,Male,Transitional,No,Partial,8.2512,48.4683
+BEN-0018,2023-03-18,Baidoa,Dinsor,Returnee,Local Integration,Assessment,3,Male,Emergency,No,Complete,2.5268,43.7374
+BEN-0019,2023-04-02,Mogadishu,Wadajir,Returnee,Return,Assessment,4,Male,Permanent,Yes,None,2.0245,45.5429
+BEN-0020,2023-03-16,Dollow,Luuq,IDP,Relocation,Assessment,5,Male,Transitional,No,Partial,4.1721,42.2855
+BEN-0021,2023-03-15,Garowe,Burtinle,Host Community,Return,Achieved,10,Male,Permanent,Yes,Partial,8.1983,48.3625
+BEN-0022,2023-07-24,Garowe,Garowe Central,IDP,Return,Achieved,10,Male,Transitional,Yes,Complete,8.1395,48.4892
+BEN-0023,2024-09-03,Garowe,Garowe Central,Host Community,Local Integration,Planning,5,Male,Emergency,Yes,Partial,8.477,48.436
+BEN-0024,2023-03-30,Mogadishu,Yaqshid,IDP,Relocation,Implementation,9,Male,Permanent,Yes,None,2.1342,45.2925
+BEN-0025,2023-03-26,Garowe,Burtinle,IDP,Local Integration,Planning,12,Male,Emergency,No,Partial,8.1849,48.3939
+BEN-0026,2023-05-01,Garowe,Garowe Central,IDP,Local Integration,Assessment,5,Male,Emergency,Yes,Complete,8.5061,48.5173
+BEN-0027,2024-10-25,Garowe,Garowe Central,IDP,Relocation,Planning,7,Male,Emergency,No,None,8.536,48.3067
+BEN-0028,2023-10-10,Baidoa,Baidoa Central,IDP,Relocation,Implementation,2,Male,Transitional,Yes,Complete,2.3348,43.4282
+BEN-0029,2024-08-02,Mogadishu,Yaqshid,IDP,Relocation,Assessment,1,Male,Emergency,No,Partial,1.7685,45.2397
+BEN-0030,2024-08-10,Mogadishu,Yaqshid,Returnee,Local Integration,Achieved,3,Female,Transitional,Yes,Complete,1.8966,45.0799
+BEN-0031,2023-09-26,Kismayo,Badhadhe,IDP,Local Integration,Achieved,8,Male,Transitional,Yes,Complete,-0.1769,42.7638
+BEN-0032,2023-09-05,Mogadishu,Wadajir,IDP,Return,Achieved,5,Male,Transitional,Yes,Complete,1.9567,45.5105
+BEN-0033,2024-07-17,Kismayo,Badhadhe,IDP,Return,Assessment,5,Male,Transitional,No,None,-0.2733,42.4852
+BEN-0034,2023-12-02,Baidoa,Dinsor,Returnee,Return,Achieved,12,Male,Transitional,Yes,Complete,2.3954,43.7868
+BEN-0035,2023-08-04,Baidoa,Dinsor,IDP,Relocation,Assessment,11,Male,Transitional,No,Complete,2.69,43.6728
+BEN-0036,2023-11-13,Kismayo,Badhadhe,Host Community,Local Integration,Assessment,12,Male,Transitional,No,Partial,-0.2581,42.4411
+BEN-0037,2023-11-22,Garowe,Burtinle,IDP,Local Integration,Planning,6,Male,Permanent,No,Complete,8.349,48.6847
+BEN-0038,2023-07-07,Dollow,Luuq,IDP,Local Integration,Implementation,4,Female,Permanent,Yes,Partial,4.2887,42.0734
+BEN-0039,2023-03-03,Kismayo,Kismayo Central,IDP,Relocation,Implementation,11,Female,Emergency,No,Partial,-0.1743,42.3338
+BEN-0040,2023-09-21,Mogadishu,Yaqshid,IDP,Return,Assessment,12,Female,Transitional,Yes,None,2.1647,45.3148
+BEN-0041,2023-05-19,Dollow,Dollow Town,Returnee,Local Integration,Planning,8,Female,Permanent,No,Complete,4.2177,42.3172
+BEN-0042,2023-06-26,Garowe,Burtinle,Returnee,Relocation,Achieved,8,Female,Permanent,No,Complete,8.6037,48.5132
+BEN-0043,2023-09-12,Mogadishu,Wadajir,IDP,Local Integration,Planning,3,Male,Permanent,Yes,None,2.0108,45.4463
+BEN-0044,2024-03-07,Dollow,Dollow Town,IDP,Relocation,Planning,7,Female,Emergency,No,None,4.3072,41.8052
+BEN-0045,2024-01-10,Baidoa,Dinsor,IDP,Relocation,Planning,4,Male,Permanent,No,Complete,2.3629,43.3532
+BEN-0046,2023-12-25,Mogadishu,Wadajir,Returnee,Local Integration,Achieved,7,Female,Permanent,Yes,Complete,2.0084,45.0356
+BEN-0047,2024-05-01,Garowe,Garowe Central,IDP,Return,Planning,8,Male,Transitional,Yes,Partial,8.1558,48.4417
+BEN-0048,2024-03-21,Kismayo,Badhadhe,IDP,Return,Planning,6,Male,Emergency,Yes,Complete,-0.4912,42.8161
+BEN-0049,2023-09-25,Baidoa,Dinsor,IDP,Return,Implementation,8,Female,Emergency,Yes,None,2.1589,43.3683
+BEN-0050,2023-10-04,Baidoa,Dinsor,IDP,Local Integration,Implementation,5,Male,Permanent,Yes,None,2.7034,43.6287
+BEN-0051,2024-02-03,Garowe,Garowe Central,Returnee,Local Integration,Assessment,5,Female,Emergency,No,None,8.6627,48.53
+BEN-0052,2023-02-26,Garowe,Garowe Central,IDP,Relocation,Achieved,11,Male,Permanent,No,Partial,8.5831,48.5241
+BEN-0053,2024-01-20,Baidoa,Buur Hakaba,Returnee,Local Integration,Planning,9,Male,Permanent,No,Partial,2.6281,43.413
+BEN-0054,2023-12-11,Dollow,Luuq,IDP,Return,Planning,10,Female,Transitional,No,None,4.3787,42.1222
+BEN-0055,2023-07-20,Dollow,Luuq,Returnee,Local Integration,Achieved,12,Male,Permanent,No,Complete,3.9005,42.2773
+BEN-0056,2023-09-19,Garowe,Garowe Central,Returnee,Relocation,Achieved,12,Male,Permanent,No,Complete,8.4154,48.2991
+BEN-0057,2023-09-21,Dollow,Dollow Town,IDP,Local Integration,Planning,7,Female,Permanent,No,Complete,3.9391,41.8997
+BEN-0058,2023-11-24,Garowe,Burtinle,IDP,Local Integration,Assessment,12,Female,Emergency,Yes,Partial,8.3165,48.4567
+BEN-0059,2024-09-09,Mogadishu,Hodan,Host Community,Local Integration,Assessment,6,Male,Emergency,Yes,Partial,1.8767,45.3087
+BEN-0060,2023-03-02,Kismayo,Kismayo Central,IDP,Local Integration,Achieved,2,Male,Transitional,Yes,Complete,-0.2334,42.3213
+BEN-0061,2023-07-22,Garowe,Burtinle,IDP,Local Integration,Planning,8,Male,Emergency,No,None,8.387,48.4488
+BEN-0062,2023-11-22,Garowe,Garowe Central,IDP,Local Integration,Assessment,10,Female,Permanent,No,Partial,8.1964,48.6712
+BEN-0063,2023-11-15,Mogadishu,Yaqshid,Host Community,Relocation,Planning,10,Female,Permanent,Yes,Complete,1.9751,45.5633
+BEN-0064,2023-04-08,Baidoa,Baidoa Central,IDP,Local Integration,Assessment,1,Male,Permanent,Yes,None,2.51,43.5085
+BEN-0065,2023-10-31,Dollow,Luuq,Returnee,Return,Achieved,11,Male,Permanent,No,Complete,4.0581,41.9056
+BEN-0066,2023-10-14,Dollow,Dollow Town,IDP,Return,Assessment,12,Female,Emergency,No,Partial,4.21,42.1553
+BEN-0067,2024-03-02,Kismayo,Badhadhe,IDP,Relocation,Planning,7,Female,Emergency,Yes,Complete,-0.5836,42.6586
+BEN-0068,2024-08-26,Kismayo,Badhadhe,Host Community,Return,Achieved,3,Male,Permanent,Yes,Complete,-0.6427,42.3828
+BEN-0069,2024-09-05,Garowe,Burtinle,Returnee,Relocation,Assessment,11,Male,Transitional,No,Partial,8.655,48.2934
+BEN-0070,2024-02-29,Mogadishu,Wadajir,Host Community,Return,Planning,6,Male,Emergency,No,Partial,1.9939,45.3155
+BEN-0071,2024-03-13,Dollow,Dollow Town,IDP,Local Integration,Implementation,11,Male,Transitional,No,Complete,4.2779,42.0923
+BEN-0072,2023-11-05,Baidoa,Baidoa Central,Returnee,Relocation,Assessment,3,Male,Permanent,No,None,2.2949,43.4283
+BEN-0073,2023-05-11,Garowe,Garowe Central,Returnee,Return,Achieved,9,Female,Permanent,Yes,Complete,8.4368,48.2404
+BEN-0074,2023-09-21,Kismayo,Badhadhe,Returnee,Local Integration,Planning,3,Male,Permanent,No,Complete,-0.1574,42.8335
+BEN-0075,2023-10-15,Kismayo,Badhadhe,IDP,Local Integration,Achieved,11,Male,Permanent,No,Complete,-0.4543,42.718
+BEN-0076,2024-08-02,Mogadishu,Wadajir,Host Community,Relocation,Planning,4,Female,Transitional,No,None,2.07,45.2253
+BEN-0077,2023-12-06,Dollow,Dollow Town,Returnee,Relocation,Achieved,1,Male,Permanent,Yes,Partial,4.3969,42.0132
+BEN-0078,2024-04-09,Garowe,Burtinle,IDP,Relocation,Assessment,3,Male,Emergency,No,Partial,8.6272,48.709
+BEN-0079,2024-11-10,Dollow,Luuq,IDP,Local Integration,Achieved,11,Female,Permanent,Yes,Complete,4.0864,42.1823
+BEN-0080,2023-11-05,Dollow,Dollow Town,IDP,Return,Planning,3,Female,Emergency,No,None,4.2538,41.9076
+BEN-0081,2023-11-11,Kismayo,Kismayo Central,IDP,Local Integration,Planning,7,Female,Emergency,No,None,-0.6306,42.7231
+BEN-0082,2024-02-10,Mogadishu,Hodan,Host Community,Local Integration,Planning,8,Female,Permanent,Yes,None,1.8519,45.3839
+BEN-0083,2024-05-05,Kismayo,Badhadhe,IDP,Local Integration,Assessment,5,Female,Transitional,No,Partial,-0.505,42.251
+BEN-0084,2024-02-12,Dollow,Luuq,Returnee,Return,Assessment,12,Male,Transitional,No,Complete,4.1574,41.948
+BEN-0085,2023-03-06,Baidoa,Dinsor,Host Community,Relocation,Planning,4,Female,Emergency,No,Complete,2.3722,43.3546
+BEN-0086,2023-06-04,Mogadishu,Yaqshid,IDP,Return,Planning,6,Female,Transitional,No,None,1.8973,45.4715
+BEN-0087,2024-03-15,Mogadishu,Hodan,IDP,Local Integration,Assessment,9,Male,Permanent,No,Partial,2.2927,45.2142
+BEN-0088,2023-11-13,Mogadishu,Wadajir,IDP,Return,Planning,11,Female,Emergency,Yes,None,2.2953,45.5847
+BEN-0089,2023-10-12,Dollow,Luuq,Host Community,Return,Planning,7,Female,Transitional,No,Partial,3.9375,42.0034
+BEN-0090,2024-10-10,Kismayo,Kismayo Central,Host Community,Local Integration,Implementation,8,Female,Emergency,No,None,-0.2533,42.5283
+BEN-0091,2023-02-22,Kismayo,Badhadhe,IDP,Relocation,Assessment,3,Male,Emergency,No,None,-0.5882,42.2726
+BEN-0092,2024-07-21,Dollow,Luuq,Returnee,Local Integration,Planning,5,Male,Transitional,No,Complete,4.2856,42.2126
+BEN-0093,2024-01-21,Kismayo,Kismayo Central,IDP,Local Integration,Implementation,5,Male,Transitional,No,None,-0.3922,42.8157
+BEN-0094,2024-10-30,Baidoa,Buur Hakaba,Host Community,Return,Assessment,10,Male,Transitional,Yes,None,2.1897,43.477
+BEN-0095,2023-09-10,Baidoa,Dinsor,IDP,Local Integration,Implementation,3,Female,Emergency,Yes,Partial,2.259,43.4793
+BEN-0096,2023-05-29,Kismayo,Kismayo Central,IDP,Local Integration,Assessment,3,Male,Permanent,Yes,Partial,-0.5922,42.7653
+BEN-0097,2023-03-21,Baidoa,Baidoa Central,Returnee,Relocation,Planning,4,Female,Emergency,No,Partial,2.5797,43.6654
+BEN-0098,2024-07-01,Baidoa,Dinsor,IDP,Relocation,Achieved,7,Male,Transitional,Yes,Partial,2.6046,43.8699
+BEN-0099,2023-04-07,Baidoa,Buur Hakaba,IDP,Local Integration,Assessment,11,Female,Emergency,No,Partial,2.5621,43.6158
+BEN-0100,2023-11-12,Garowe,Burtinle,Returnee,Relocation,Achieved,9,Female,Transitional,No,Complete,8.3339,48.5429
+BEN-0101,2023-12-28,Mogadishu,Wadajir,Returnee,Relocation,Achieved,11,Male,Permanent,Yes,Complete,2.0178,45.1553
+BEN-0102,2023-04-18,Kismayo,Kismayo Central,IDP,Return,Planning,9,Male,Emergency,Yes,Partial,-0.2461,42.53
+BEN-0103,2024-03-23,Garowe,Burtinle,IDP,Local Integration,Implementation,10,Female,Transitional,Yes,Partial,8.5074,48.431
+BEN-0104,2023-05-05,Mogadishu,Hodan,IDP,Local Integration,Assessment,7,Female,Transitional,Yes,Complete,2.1409,45.1527
+BEN-0105,2023-10-15,Garowe,Garowe Central,IDP,Local Integration,Planning,1,Male,Transitional,No,Partial,8.4708,48.5792
+BEN-0106,2024-10-24,Mogadishu,Yaqshid,IDP,Return,Achieved,7,Male,Permanent,Yes,Partial,2.1413,45.06
+BEN-0107,2024-08-18,Kismayo,Kismayo Central,Host Community,Return,Assessment,1,Female,Emergency,No,None,-0.4362,42.6784
+BEN-0108,2024-09-27,Baidoa,Buur Hakaba,Returnee,Relocation,Planning,7,Male,Permanent,No,None,2.4006,43.6041
+BEN-0109,2023-08-28,Kismayo,Badhadhe,Returnee,Return,Assessment,5,Male,Emergency,No,None,-0.342,42.4305
+BEN-0110,2023-05-27,Baidoa,Baidoa Central,Returnee,Local Integration,Implementation,12,Male,Transitional,No,None,2.4331,43.6081
+BEN-0111,2023-12-01,Dollow,Dollow Town,Host Community,Relocation,Implementation,2,Male,Transitional,No,Partial,4.1592,41.8134
+BEN-0112,2024-04-30,Baidoa,Buur Hakaba,IDP,Return,Planning,10,Male,Emergency,No,None,2.2378,43.9183
+BEN-0113,2023-12-28,Garowe,Garowe Central,IDP,Local Integration,Assessment,2,Female,Emergency,No,Complete,8.3429,48.3707
+BEN-0114,2024-11-05,Garowe,Garowe Central,IDP,Local Integration,Assessment,3,Female,Emergency,Yes,Partial,8.649,48.3941
+BEN-0115,2024-10-19,Mogadishu,Yaqshid,Returnee,Relocation,Achieved,11,Female,Permanent,No,Complete,1.7921,45.589
+BEN-0116,2023-06-18,Garowe,Burtinle,Returnee,Return,Planning,1,Male,Transitional,No,Partial,8.6239,48.5608
+BEN-0117,2023-03-14,Garowe,Garowe Central,IDP,Local Integration,Assessment,9,Male,Emergency,No,Complete,8.2916,48.4556
+BEN-0118,2024-11-12,Dollow,Dollow Town,IDP,Local Integration,Implementation,1,Male,Transitional,Yes,Complete,4.1531,42.2526
+BEN-0119,2024-11-06,Baidoa,Buur Hakaba,IDP,Return,Assessment,9,Female,Transitional,No,Partial,2.7241,43.4003
+BEN-0120,2024-03-08,Mogadishu,Wadajir,IDP,Return,Achieved,6,Male,Permanent,Yes,Complete,1.9706,45.1879
+BEN-0121,2024-09-23,Garowe,Burtinle,IDP,Local Integration,Assessment,5,Female,Permanent,No,None,8.2759,48.6187
+BEN-0122,2023-11-28,Dollow,Dollow Town,Host Community,Relocation,Achieved,12,Female,Permanent,No,Partial,4.2403,42.3295
+BEN-0123,2024-01-20,Garowe,Garowe Central,IDP,Local Integration,Planning,8,Male,Emergency,No,None,8.493,48.4385
+BEN-0124,2023-04-28,Mogadishu,Hodan,Host Community,Return,Achieved,10,Male,Permanent,Yes,Complete,1.8399,45.1957
+BEN-0125,2024-10-15,Mogadishu,Hodan,IDP,Relocation,Assessment,12,Male,Transitional,No,Partial,1.8554,45.4339
+BEN-0126,2023-09-11,Dollow,Luuq,Host Community,Local Integration,Planning,11,Female,Transitional,No,None,4.3347,42.237
+BEN-0127,2024-06-12,Dollow,Luuq,Host Community,Relocation,Assessment,5,Male,Emergency,Yes,Complete,4.345,42.2336
+BEN-0128,2024-06-26,Dollow,Luuq,IDP,Local Integration,Assessment,9,Male,Emergency,No,Partial,4.216,41.8283
+BEN-0129,2024-04-20,Dollow,Dollow Town,IDP,Return,Planning,6,Male,Emergency,No,Partial,4.4511,41.8999
+BEN-0130,2023-04-26,Dollow,Dollow Town,IDP,Local Integration,Assessment,12,Male,Emergency,No,Partial,4.1082,41.7836
+BEN-0131,2023-02-03,Dollow,Luuq,IDP,Local Integration,Assessment,7,Male,Permanent,No,Complete,4.2525,42.3102
+BEN-0132,2024-03-19,Kismayo,Kismayo Central,Host Community,Relocation,Assessment,9,Male,Emergency,No,Partial,-0.4775,42.274
+BEN-0133,2023-01-16,Garowe,Garowe Central,Host Community,Local Integration,Assessment,11,Female,Permanent,Yes,Partial,8.5365,48.3593
+BEN-0134,2024-07-06,Baidoa,Dinsor,Host Community,Return,Planning,7,Male,Transitional,No,None,2.7195,43.3903
+BEN-0135,2023-09-18,Kismayo,Kismayo Central,IDP,Local Integration,Assessment,6,Female,Emergency,No,Partial,-0.4439,42.2859
+BEN-0136,2024-10-22,Mogadishu,Yaqshid,IDP,Local Integration,Assessment,4,Male,Transitional,No,None,2.0257,45.4354
+BEN-0137,2024-02-26,Mogadishu,Hodan,Host Community,Relocation,Planning,6,Male,Emergency,No,None,1.9363,45.2042
+BEN-0138,2024-02-28,Kismayo,Badhadhe,Returnee,Relocation,Achieved,6,Female,Permanent,Yes,Complete,-0.5835,42.4662
+BEN-0139,2024-09-22,Kismayo,Kismayo Central,IDP,Local Integration,Planning,11,Male,Emergency,No,None,-0.222,42.2928
+BEN-0140,2024-04-13,Kismayo,Badhadhe,IDP,Relocation,Assessment,5,Female,Transitional,No,Complete,-0.2966,42.5011
+BEN-0141,2024-06-23,Baidoa,Baidoa Central,IDP,Return,Assessment,3,Male,Permanent,Yes,Partial,2.5374,43.5934
+BEN-0142,2024-08-17,Mogadishu,Yaqshid,IDP,Local Integration,Achieved,8,Male,Permanent,Yes,Complete,1.9667,45.2479
+BEN-0143,2024-11-10,Garowe,Garowe Central,IDP,Local Integration,Assessment,9,Male,Emergency,No,None,8.4231,48.4233
+BEN-0144,2024-04-15,Garowe,Garowe Central,IDP,Local Integration,Achieved,3,Male,Permanent,Yes,Partial,8.2625,48.3407
+BEN-0145,2023-04-14,Dollow,Dollow Town,IDP,Local Integration,Achieved,5,Male,Transitional,No,Complete,4.4225,42.0338
+BEN-0146,2023-07-12,Mogadishu,Yaqshid,IDP,Local Integration,Assessment,8,Male,Emergency,Yes,None,2.1726,45.4383
+BEN-0147,2023-05-27,Kismayo,Badhadhe,Host Community,Return,Assessment,12,Male,Transitional,No,Partial,-0.3778,42.8352
+BEN-0148,2023-03-31,Garowe,Burtinle,IDP,Local Integration,Achieved,11,Female,Transitional,Yes,Complete,8.5669,48.6785
+BEN-0149,2024-10-31,Kismayo,Kismayo Central,Host Community,Local Integration,Assessment,2,Female,Transitional,Yes,Complete,-0.1314,42.7136
+BEN-0150,2023-09-02,Mogadishu,Wadajir,IDP,Local Integration,Assessment,9,Male,Transitional,No,None,1.8457,45.2118
+BEN-0151,2024-06-12,Mogadishu,Yaqshid,IDP,Local Integration,Assessment,10,Male,Permanent,No,Complete,1.9286,45.3383
+BEN-0152,2024-08-27,Baidoa,Baidoa Central,IDP,Local Integration,Implementation,1,Male,Transitional,No,Complete,2.162,43.7346
+BEN-0153,2023-09-22,Garowe,Burtinle,Returnee,Local Integration,Planning,7,Male,Emergency,No,None,8.4905,48.3658
+BEN-0154,2023-12-07,Dollow,Dollow Town,IDP,Relocation,Assessment,2,Male,Transitional,No,Complete,4.0874,41.8529
+BEN-0155,2023-06-08,Mogadishu,Wadajir,IDP,Return,Planning,4,Male,Transitional,No,Complete,1.8204,45.288
+BEN-0156,2024-06-25,Kismayo,Badhadhe,Returnee,Relocation,Planning,8,Male,Emergency,No,Partial,-0.5443,42.341
+BEN-0157,2024-06-04,Mogadishu,Yaqshid,Host Community,Relocation,Planning,7,Male,Permanent,Yes,None,1.9586,45.0485
+BEN-0158,2024-02-29,Kismayo,Badhadhe,IDP,Local Integration,Planning,7,Female,Permanent,Yes,Partial,-0.1999,42.465
+BEN-0159,2024-10-01,Dollow,Luuq,IDP,Local Integration,Assessment,9,Male,Transitional,No,Partial,4.3785,42.1406
+BEN-0160,2023-02-25,Mogadishu,Hodan,IDP,Return,Assessment,8,Male,Transitional,No,Partial,2.1084,45.259
+BEN-0161,2023-06-30,Garowe,Garowe Central,Returnee,Local Integration,Implementation,12,Female,Permanent,No,Complete,8.3022,48.5523
+BEN-0162,2023-05-07,Kismayo,Badhadhe,Returnee,Local Integration,Achieved,8,Male,Permanent,No,Partial,-0.1688,42.4664
+BEN-0163,2023-07-08,Garowe,Garowe Central,Host Community,Relocation,Assessment,12,Male,Emergency,No,None,8.5382,48.5346
+BEN-0164,2024-03-12,Mogadishu,Hodan,IDP,Relocation,Implementation,12,Male,Permanent,No,Partial,2.0115,45.2695
+BEN-0165,2024-05-18,Mogadishu,Yaqshid,Host Community,Relocation,Planning,6,Female,Emergency,No,Partial,1.8713,45.2132
+BEN-0166,2023-09-24,Kismayo,Badhadhe,IDP,Local Integration,Assessment,4,Female,Transitional,No,Partial,-0.2922,42.3608
+BEN-0167,2023-10-22,Dollow,Luuq,IDP,Return,Implementation,6,Male,Permanent,No,Partial,4.1712,42.103
+BEN-0168,2024-01-04,Kismayo,Kismayo Central,Returnee,Local Integration,Achieved,9,Female,Transitional,Yes,Complete,-0.4856,42.6739
+BEN-0169,2023-09-17,Kismayo,Kismayo Central,IDP,Return,Achieved,4,Male,Permanent,No,Partial,-0.5927,42.6899
+BEN-0170,2023-06-04,Baidoa,Buur Hakaba,IDP,Local Integration,Planning,4,Male,Transitional,No,Partial,2.3329,43.6331
+BEN-0171,2023-04-16,Kismayo,Badhadhe,Host Community,Local Integration,Implementation,3,Male,Emergency,No,None,-0.2707,42.7902
+BEN-0172,2023-11-07,Dollow,Luuq,IDP,Return,Planning,6,Male,Permanent,Yes,Complete,3.9951,42.2161
+BEN-0173,2024-06-14,Dollow,Luuq,Returnee,Local Integration,Achieved,8,Female,Permanent,No,Partial,4.4169,41.8472
+BEN-0174,2023-11-13,Kismayo,Kismayo Central,Host Community,Local Integration,Assessment,9,Male,Permanent,No,Partial,-0.6497,42.4477
+BEN-0175,2023-06-07,Baidoa,Buur Hakaba,Returnee,Local Integration,Assessment,5,Male,Transitional,No,None,2.5363,43.4606
+BEN-0176,2023-09-13,Kismayo,Kismayo Central,IDP,Return,Planning,11,Female,Transitional,No,None,-0.5013,42.4611
+BEN-0177,2024-01-26,Kismayo,Kismayo Central,Host Community,Local Integration,Assessment,8,Female,Emergency,Yes,Partial,-0.275,42.8098
+BEN-0178,2024-05-11,Garowe,Burtinle,Host Community,Local Integration,Assessment,8,Female,Permanent,No,None,8.3549,48.514
+BEN-0179,2024-07-28,Kismayo,Kismayo Central,Host Community,Local Integration,Implementation,6,Female,Permanent,Yes,None,-0.1079,42.3127
+BEN-0180,2024-05-29,Dollow,Dollow Town,IDP,Relocation,Assessment,7,Male,Transitional,No,None,4.2915,42.1969
+BEN-0181,2023-11-26,Garowe,Garowe Central,IDP,Relocation,Planning,2,Male,Emergency,No,None,8.4407,48.5882
+BEN-0182,2023-03-17,Dollow,Luuq,IDP,Relocation,Assessment,3,Female,Transitional,Yes,Partial,4.3035,42.0914
+BEN-0183,2024-02-05,Dollow,Luuq,Returnee,Return,Achieved,6,Male,Permanent,No,Partial,4.479,41.9962
+BEN-0184,2023-08-31,Mogadishu,Yaqshid,IDP,Return,Planning,9,Male,Transitional,No,Complete,1.9827,45.0946
+BEN-0185,2023-07-27,Mogadishu,Hodan,IDP,Return,Achieved,4,Male,Permanent,Yes,Complete,2.0233,45.1113
+BEN-0186,2023-03-05,Baidoa,Baidoa Central,IDP,Return,Planning,4,Male,Transitional,No,None,2.4911,43.6176
+BEN-0187,2024-08-26,Mogadishu,Yaqshid,IDP,Local Integration,Assessment,9,Male,Transitional,No,None,2.343,45.1587
+BEN-0188,2024-09-11,Dollow,Luuq,IDP,Relocation,Implementation,11,Female,Transitional,No,None,4.0484,42.1007
+BEN-0189,2023-11-18,Dollow,Luuq,Returnee,Local Integration,Implementation,3,Male,Emergency,No,Partial,4.3011,42.0117
+BEN-0190,2024-07-10,Baidoa,Dinsor,IDP,Relocation,Assessment,11,Male,Transitional,No,None,2.3823,43.5996
+BEN-0191,2023-07-29,Dollow,Luuq,IDP,Local Integration,Planning,2,Male,Permanent,Yes,Complete,3.9388,42.2015
+BEN-0192,2023-12-21,Garowe,Garowe Central,IDP,Return,Assessment,8,Male,Emergency,No,None,8.393,48.7062
+BEN-0193,2023-12-10,Garowe,Garowe Central,IDP,Relocation,Planning,5,Male,Permanent,No,Partial,8.3434,48.3281
+BEN-0194,2024-05-09,Garowe,Burtinle,IDP,Local Integration,Planning,10,Male,Transitional,Yes,Partial,8.385,48.6662
+BEN-0195,2024-08-30,Mogadishu,Hodan,Returnee,Local Integration,Assessment,4,Male,Emergency,No,Partial,1.9034,45.5791
+BEN-0196,2024-11-02,Garowe,Burtinle,Returnee,Relocation,Achieved,12,Female,Permanent,Yes,Partial,8.2598,48.6775
+BEN-0197,2024-11-02,Dollow,Dollow Town,IDP,Return,Assessment,3,Female,Emergency,No,None,4.4334,42.092
+BEN-0198,2024-06-15,Mogadishu,Hodan,Returnee,Local Integration,Assessment,8,Male,Permanent,No,Partial,2.1712,45.0237
+BEN-0199,2024-07-10,Baidoa,Dinsor,IDP,Local Integration,Assessment,2,Male,Permanent,Yes,Partial,2.4657,43.3568
+BEN-0200,2023-09-30,Garowe,Garowe Central,IDP,Local Integration,Planning,8,Female,Emergency,No,Partial,8.25,48.5564
+BEN-0201,2023-04-07,Mogadishu,Yaqshid,IDP,Return,Planning,8,Male,Transitional,No,Partial,1.8824,45.4286
+BEN-0202,2024-04-03,Baidoa,Dinsor,IDP,Return,Implementation,12,Female,Emergency,Yes,None,2.2375,43.6496
+BEN-0203,2023-10-29,Dollow,Luuq,Host Community,Return,Assessment,10,Male,Transitional,Yes,None,3.9112,41.8113
+BEN-0204,2024-08-17,Dollow,Dollow Town,Returnee,Local Integration,Achieved,2,Female,Transitional,No,Complete,4.0629,42.1051
+BEN-0205,2023-04-02,Kismayo,Kismayo Central,IDP,Relocation,Planning,8,Male,Emergency,No,Partial,-0.5996,42.3847
+BEN-0206,2024-02-08,Kismayo,Badhadhe,IDP,Local Integration,Assessment,3,Male,Emergency,No,None,-0.3991,42.6532
+BEN-0207,2023-04-18,Mogadishu,Yaqshid,IDP,Local Integration,Planning,3,Male,Transitional,Yes,Partial,1.9807,45.2346
+BEN-0208,2024-03-07,Mogadishu,Wadajir,IDP,Return,Assessment,10,Female,Transitional,Yes,Complete,2.0162,45.351
+BEN-0209,2023-04-11,Kismayo,Badhadhe,Host Community,Local Integration,Implementation,7,Male,Permanent,No,None,-0.6508,42.4937
+BEN-0210,2023-03-20,Mogadishu,Wadajir,IDP,Relocation,Planning,2,Male,Transitional,No,Partial,1.9276,45.3141
+BEN-0211,2024-10-07,Kismayo,Kismayo Central,IDP,Relocation,Assessment,7,Male,Emergency,Yes,Partial,-0.2257,42.5429
+BEN-0212,2023-12-23,Garowe,Burtinle,Returnee,Local Integration,Planning,3,Male,Emergency,No,Partial,8.5878,48.3822
+BEN-0213,2024-08-26,Kismayo,Badhadhe,IDP,Local Integration,Planning,2,Female,Transitional,No,Partial,-0.2173,42.6251
+BEN-0214,2024-07-31,Mogadishu,Yaqshid,IDP,Relocation,Achieved,12,Male,Transitional,Yes,Complete,2.3453,45.1262
+BEN-0215,2023-09-30,Dollow,Luuq,IDP,Relocation,Planning,8,Female,Emergency,No,Partial,3.9668,41.9484
+BEN-0216,2024-01-18,Dollow,Luuq,Host Community,Return,Assessment,11,Female,Emergency,Yes,Partial,4.2095,42.2411
+BEN-0217,2024-02-28,Baidoa,Dinsor,IDP,Relocation,Assessment,4,Female,Emergency,No,None,2.7249,43.7562
+BEN-0218,2024-09-08,Garowe,Garowe Central,Host Community,Local Integration,Planning,5,Male,Emergency,Yes,Partial,8.3729,48.4192
+BEN-0219,2024-01-06,Baidoa,Baidoa Central,IDP,Local Integration,Planning,6,Male,Emergency,No,Complete,2.6335,43.7878
+BEN-0220,2023-03-24,Baidoa,Buur Hakaba,IDP,Return,Achieved,11,Male,Transitional,Yes,Partial,2.5679,43.6212
+BEN-0221,2023-06-27,Mogadishu,Yaqshid,IDP,Relocation,Planning,3,Male,Emergency,No,Partial,1.8932,45.1229
+BEN-0222,2023-08-05,Dollow,Luuq,Returnee,Relocation,Planning,12,Male,Emergency,No,None,3.9008,42.1352
+BEN-0223,2024-01-24,Garowe,Garowe Central,IDP,Local Integration,Planning,8,Female,Emergency,No,Partial,8.5851,48.5066
+BEN-0224,2024-01-06,Kismayo,Badhadhe,IDP,Relocation,Implementation,10,Male,Emergency,No,Partial,-0.2914,42.5976
+BEN-0225,2023-07-21,Mogadishu,Wadajir,IDP,Local Integration,Implementation,3,Female,Transitional,No,Partial,1.8176,45.2014
+BEN-0226,2024-11-05,Dollow,Luuq,IDP,Local Integration,Planning,6,Male,Transitional,Yes,None,3.9948,42.148
+BEN-0227,2024-05-25,Garowe,Garowe Central,IDP,Local Integration,Planning,8,Male,Permanent,No,Complete,8.6247,48.7556
+BEN-0228,2023-07-05,Dollow,Luuq,IDP,Return,Assessment,4,Female,Transitional,No,None,4.3094,42.033
+BEN-0229,2024-06-05,Kismayo,Kismayo Central,Host Community,Return,Implementation,6,Female,Emergency,No,Partial,-0.1898,42.5848
+BEN-0230,2024-03-25,Baidoa,Dinsor,IDP,Local Integration,Planning,6,Male,Emergency,No,Partial,2.3995,43.4808
+BEN-0231,2024-09-08,Dollow,Dollow Town,IDP,Relocation,Assessment,4,Male,Permanent,Yes,None,4.3487,41.9089
+BEN-0232,2023-07-06,Garowe,Burtinle,IDP,Local Integration,Planning,11,Male,Permanent,No,Partial,8.4248,48.5426
+BEN-0233,2023-05-24,Mogadishu,Wadajir,IDP,Local Integration,Assessment,7,Male,Transitional,No,None,2.2982,45.6137
+BEN-0234,2024-02-03,Mogadishu,Yaqshid,Returnee,Return,Achieved,12,Male,Transitional,No,Complete,2.1263,45.3949
+BEN-0235,2023-01-17,Kismayo,Badhadhe,IDP,Relocation,Achieved,2,Female,Permanent,Yes,Complete,-0.088,42.4418
+BEN-0236,2024-06-04,Dollow,Dollow Town,IDP,Local Integration,Planning,3,Female,Transitional,No,Complete,4.4642,42.2616
+BEN-0237,2023-03-03,Dollow,Luuq,IDP,Relocation,Assessment,8,Male,Emergency,No,None,4.4198,42.2241
+BEN-0238,2024-11-10,Dollow,Dollow Town,IDP,Local Integration,Planning,2,Male,Emergency,No,Partial,4.4807,42.3123
+BEN-0239,2023-09-11,Mogadishu,Hodan,Returnee,Return,Achieved,3,Female,Transitional,Yes,Complete,1.9847,45.2015
+BEN-0240,2024-01-01,Mogadishu,Yaqshid,IDP,Relocation,Achieved,4,Male,Transitional,Yes,Complete,2.1549,45.0238
+BEN-0241,2024-01-26,Baidoa,Dinsor,IDP,Local Integration,Planning,9,Female,Emergency,Yes,None,2.6183,43.4116
+BEN-0242,2023-08-21,Baidoa,Dinsor,IDP,Relocation,Implementation,2,Male,Transitional,Yes,None,2.5247,43.6138
+BEN-0243,2024-03-29,Baidoa,Dinsor,IDP,Local Integration,Assessment,9,Female,Transitional,Yes,None,2.5727,43.5606
+BEN-0244,2023-11-19,Garowe,Burtinle,IDP,Local Integration,Achieved,1,Male,Permanent,No,Complete,8.5728,48.5988
+BEN-0245,2024-09-14,Dollow,Luuq,IDP,Return,Planning,10,Male,Transitional,No,None,3.9509,42.0664
+BEN-0246,2023-03-30,Kismayo,Kismayo Central,IDP,Return,Assessment,1,Male,Transitional,Yes,None,-0.2006,42.8181
+BEN-0247,2024-03-15,Garowe,Burtinle,Returnee,Relocation,Assessment,5,Male,Permanent,Yes,Complete,8.4825,48.4851
+BEN-0248,2023-06-23,Kismayo,Kismayo Central,Host Community,Local Integration,Planning,12,Male,Permanent,No,None,-0.3514,42.3673
+BEN-0249,2023-05-13,Mogadishu,Hodan,Returnee,Return,Planning,12,Male,Emergency,Yes,None,1.8936,45.573
+BEN-0250,2024-06-27,Baidoa,Baidoa Central,IDP,Local Integration,Planning,2,Male,Emergency,No,Partial,2.4325,43.5577
+BEN-0251,2024-08-27,Kismayo,Badhadhe,IDP,Relocation,Planning,8,Female,Permanent,Yes,Partial,-0.495,42.2837
+BEN-0252,2024-08-24,Mogadishu,Wadajir,IDP,Local Integration,Achieved,1,Male,Permanent,Yes,Partial,1.8413,45.4822
+BEN-0253,2023-07-17,Baidoa,Buur Hakaba,IDP,Relocation,Assessment,12,Male,Transitional,No,None,2.3531,43.9018
+BEN-0254,2023-03-09,Kismayo,Kismayo Central,IDP,Local Integration,Implementation,8,Male,Emergency,Yes,Partial,-0.3153,42.317
+BEN-0255,2024-01-27,Kismayo,Badhadhe,IDP,Local Integration,Implementation,8,Male,Transitional,Yes,Complete,-0.6064,42.5194
+BEN-0256,2024-07-27,Garowe,Burtinle,IDP,Local Integration,Assessment,9,Male,Transitional,Yes,None,8.7041,48.65
+BEN-0257,2023-11-25,Baidoa,Buur Hakaba,IDP,Local Integration,Implementation,1,Male,Emergency,No,Partial,2.1356,43.7441
+BEN-0258,2024-06-30,Kismayo,Kismayo Central,Returnee,Local Integration,Achieved,9,Male,Transitional,Yes,Complete,-0.6319,42.3843
+BEN-0259,2023-05-28,Dollow,Dollow Town,IDP,Local Integration,Planning,12,Male,Transitional,No,Partial,4.2384,41.8041
+BEN-0260,2023-08-10,Kismayo,Badhadhe,IDP,Return,Assessment,8,Male,Emergency,No,None,-0.495,42.2902
+BEN-0261,2023-08-15,Dollow,Dollow Town,Returnee,Local Integration,Planning,11,Male,Emergency,Yes,None,4.2049,42.3455
+BEN-0262,2023-06-15,Garowe,Garowe Central,IDP,Local Integration,Planning,11,Male,Transitional,Yes,Complete,8.2344,48.6984
+BEN-0263,2024-04-22,Kismayo,Kismayo Central,Host Community,Local Integration,Assessment,2,Male,Transitional,Yes,None,-0.6396,42.488
+BEN-0264,2024-01-31,Baidoa,Baidoa Central,IDP,Local Integration,Assessment,11,Male,Emergency,Yes,None,2.2131,43.8439
+BEN-0265,2023-12-20,Mogadishu,Hodan,IDP,Return,Planning,7,Female,Emergency,No,None,2.2899,45.5158
+BEN-0266,2023-07-10,Dollow,Luuq,IDP,Local Integration,Assessment,3,Male,Transitional,No,Partial,3.901,42.1766
+BEN-0267,2024-07-31,Garowe,Garowe Central,Returnee,Return,Assessment,11,Female,Emergency,Yes,Partial,8.4938,48.4838
+BEN-0268,2023-02-03,Mogadishu,Yaqshid,Returnee,Local Integration,Planning,9,Male,Transitional,No,Partial,2.3434,45.3444
+BEN-0269,2023-08-27,Dollow,Luuq,IDP,Local Integration,Assessment,10,Male,Transitional,No,Complete,3.9912,41.958
+BEN-0270,2024-07-14,Mogadishu,Hodan,IDP,Local Integration,Implementation,3,Male,Transitional,Yes,Partial,1.8956,45.1629
+BEN-0271,2024-09-11,Garowe,Burtinle,IDP,Local Integration,Implementation,4,Male,Permanent,No,None,8.5891,48.6031
+BEN-0272,2023-03-13,Garowe,Burtinle,IDP,Local Integration,Assessment,6,Female,Permanent,Yes,Partial,8.2107,48.2073
+BEN-0273,2023-12-12,Mogadishu,Hodan,IDP,Return,Assessment,9,Male,Permanent,Yes,None,1.9514,45.1247
+BEN-0274,2024-09-06,Baidoa,Buur Hakaba,IDP,Local Integration,Planning,12,Male,Transitional,Yes,None,2.5574,43.747
+BEN-0275,2024-10-04,Dollow,Luuq,IDP,Local Integration,Achieved,5,Female,Permanent,Yes,Partial,3.9878,42.3479
+BEN-0276,2024-08-23,Kismayo,Kismayo Central,Returnee,Return,Assessment,10,Male,Permanent,No,None,-0.5516,42.2465
+BEN-0277,2024-01-05,Dollow,Dollow Town,IDP,Local Integration,Achieved,11,Female,Transitional,No,Complete,4.082,41.8134
+BEN-0278,2023-03-25,Kismayo,Badhadhe,IDP,Local Integration,Assessment,8,Female,Emergency,No,None,-0.6514,42.3712
+BEN-0279,2024-02-06,Dollow,Dollow Town,IDP,Relocation,Assessment,11,Male,Transitional,No,Complete,4.414,42.0625
+BEN-0280,2023-11-12,Mogadishu,Wadajir,IDP,Local Integration,Planning,3,Male,Emergency,No,None,1.7911,45.5257
+BEN-0281,2023-04-20,Mogadishu,Yaqshid,IDP,Relocation,Achieved,3,Female,Transitional,No,Complete,1.7919,45.5833
+BEN-0282,2023-07-28,Dollow,Dollow Town,Returnee,Local Integration,Achieved,7,Female,Transitional,Yes,Partial,3.9154,41.9654
+BEN-0283,2024-03-27,Garowe,Burtinle,IDP,Local Integration,Achieved,4,Male,Permanent,Yes,Complete,8.1976,48.401
+BEN-0284,2023-04-08,Baidoa,Baidoa Central,Returnee,Return,Achieved,5,Male,Permanent,No,Complete,2.2372,43.5248
+BEN-0285,2024-01-28,Garowe,Burtinle,IDP,Relocation,Assessment,5,Male,Transitional,No,Partial,8.2163,48.7158
+BEN-0286,2023-04-24,Kismayo,Kismayo Central,IDP,Local Integration,Implementation,9,Male,Transitional,Yes,Complete,-0.5675,42.6633
+BEN-0287,2024-05-15,Dollow,Luuq,Host Community,Local Integration,Planning,12,Male,Transitional,No,None,4.4627,42.1789
+BEN-0288,2023-07-11,Garowe,Garowe Central,IDP,Local Integration,Assessment,2,Female,Emergency,No,None,8.1776,48.6388
+BEN-0289,2024-09-15,Dollow,Dollow Town,IDP,Local Integration,Achieved,9,Male,Transitional,Yes,Partial,4.4817,42.143
+BEN-0290,2023-01-27,Garowe,Burtinle,Host Community,Relocation,Assessment,10,Female,Transitional,Yes,None,8.6194,48.4963
+BEN-0291,2023-04-28,Garowe,Garowe Central,IDP,Local Integration,Planning,8,Female,Transitional,No,Partial,8.6604,48.5221
+BEN-0292,2023-06-11,Garowe,Burtinle,Host Community,Relocation,Assessment,4,Male,Transitional,No,Partial,8.1279,48.3497
+BEN-0293,2023-11-21,Dollow,Luuq,IDP,Local Integration,Planning,5,Female,Emergency,Yes,None,4.4215,41.7788
+BEN-0294,2024-11-06,Dollow,Luuq,IDP,Local Integration,Planning,8,Female,Emergency,No,Partial,4.045,42.0168
+BEN-0295,2023-11-29,Kismayo,Kismayo Central,Host Community,Relocation,Assessment,3,Male,Permanent,Yes,Complete,-0.349,42.3408
+BEN-0296,2024-01-19,Mogadishu,Hodan,IDP,Local Integration,Planning,11,Male,Transitional,No,Complete,1.8966,45.2921
+BEN-0297,2023-07-15,Baidoa,Baidoa Central,Returnee,Local Integration,Planning,1,Male,Transitional,No,None,2.3582,43.7061
+BEN-0298,2023-08-22,Baidoa,Baidoa Central,IDP,Local Integration,Achieved,7,Female,Transitional,No,Complete,2.647,43.8176
+BEN-0299,2024-11-07,Baidoa,Dinsor,IDP,Return,Assessment,12,Female,Transitional,No,Complete,2.14,43.8966
+BEN-0300,2024-04-29,Kismayo,Badhadhe,IDP,Local Integration,Planning,7,Female,Transitional,No,Complete,-0.1209,42.7564
+BEN-0301,2024-02-02,Baidoa,Baidoa Central,Host Community,Local Integration,Planning,6,Male,Emergency,Yes,Partial,2.4416,43.7471
+BEN-0302,2024-11-12,Kismayo,Badhadhe,IDP,Local Integration,Assessment,10,Male,Permanent,Yes,None,-0.5015,42.6721
+BEN-0303,2023-11-13,Kismayo,Kismayo Central,IDP,Relocation,Planning,12,Female,Transitional,No,None,-0.2254,42.6386
+BEN-0304,2024-07-15,Mogadishu,Wadajir,Returnee,Local Integration,Implementation,5,Male,Emergency,Yes,Complete,2.1828,45.1516
+BEN-0305,2024-08-09,Dollow,Dollow Town,IDP,Local Integration,Achieved,4,Female,Transitional,Yes,Partial,4.3279,42.2018
+BEN-0306,2023-10-08,Kismayo,Badhadhe,Host Community,Local Integration,Planning,11,Female,Emergency,Yes,Partial,-0.1853,42.4442
+BEN-0307,2023-05-17,Garowe,Garowe Central,Returnee,Local Integration,Planning,6,Male,Emergency,Yes,None,8.3887,48.3012
+BEN-0308,2023-07-18,Garowe,Burtinle,IDP,Relocation,Planning,1,Male,Emergency,No,Partial,8.1913,48.7019
+BEN-0309,2024-08-27,Dollow,Luuq,IDP,Relocation,Assessment,11,Male,Emergency,No,Complete,4.0089,42.2308
+BEN-0310,2023-02-22,Dollow,Luuq,Host Community,Local Integration,Achieved,9,Male,Permanent,Yes,Partial,4.4625,41.9967
+BEN-0311,2023-09-03,Baidoa,Dinsor,IDP,Local Integration,Assessment,10,Male,Emergency,No,Partial,2.1372,43.7899
+BEN-0312,2023-11-08,Mogadishu,Hodan,Returnee,Local Integration,Achieved,6,Male,Transitional,Yes,Complete,2.2412,45.1971
+BEN-0313,2023-05-29,Mogadishu,Wadajir,IDP,Return,Implementation,6,Female,Permanent,Yes,None,1.7584,45.1528
+BEN-0314,2024-07-15,Baidoa,Buur Hakaba,Host Community,Return,Implementation,1,Male,Emergency,No,None,2.6606,43.5032
+BEN-0315,2023-09-30,Baidoa,Buur Hakaba,Returnee,Local Integration,Assessment,11,Male,Emergency,No,Partial,2.4013,43.4239
+BEN-0316,2024-03-18,Garowe,Burtinle,IDP,Return,Planning,4,Female,Emergency,No,None,8.4791,48.6049
+BEN-0317,2024-01-16,Mogadishu,Wadajir,Returnee,Local Integration,Assessment,8,Male,Transitional,No,None,2.2458,45.6021
+BEN-0318,2023-05-08,Mogadishu,Hodan,Host Community,Relocation,Assessment,12,Female,Emergency,Yes,Complete,1.7545,45.0716
+BEN-0319,2023-11-14,Baidoa,Buur Hakaba,IDP,Relocation,Assessment,5,Male,Emergency,Yes,None,2.5213,43.6238
+BEN-0320,2023-03-02,Kismayo,Badhadhe,IDP,Local Integration,Achieved,6,Male,Permanent,Yes,Partial,-0.2151,42.3024
+BEN-0321,2023-12-31,Garowe,Burtinle,IDP,Return,Planning,7,Female,Transitional,No,Partial,8.6325,48.2403
+BEN-0322,2023-05-10,Dollow,Luuq,IDP,Return,Assessment,8,Female,Emergency,No,Partial,4.2726,42.2448
+BEN-0323,2024-10-02,Dollow,Dollow Town,IDP,Local Integration,Planning,8,Male,Transitional,No,None,4.2501,42.2342
+BEN-0324,2024-07-05,Baidoa,Buur Hakaba,Host Community,Local Integration,Achieved,12,Female,Permanent,No,Complete,2.5277,43.3571
+BEN-0325,2024-05-22,Garowe,Garowe Central,IDP,Relocation,Assessment,1,Female,Permanent,Yes,Complete,8.3651,48.6205
+BEN-0326,2023-07-03,Mogadishu,Yaqshid,IDP,Relocation,Planning,1,Female,Emergency,No,Partial,2.2562,45.5293
+BEN-0327,2023-09-12,Mogadishu,Yaqshid,IDP,Relocation,Planning,8,Male,Permanent,Yes,Partial,2.1329,45.2602
+BEN-0328,2023-02-02,Kismayo,Kismayo Central,IDP,Relocation,Planning,1,Male,Emergency,No,Complete,-0.0698,42.6925
+BEN-0329,2024-11-15,Garowe,Burtinle,Returnee,Local Integration,Achieved,9,Female,Transitional,Yes,Complete,8.6395,48.5219
+BEN-0330,2024-04-22,Garowe,Burtinle,IDP,Return,Achieved,6,Female,Transitional,Yes,Partial,8.5354,48.4025
+BEN-0331,2023-07-02,Kismayo,Badhadhe,Returnee,Local Integration,Achieved,10,Male,Permanent,Yes,Partial,-0.2369,42.2729
+BEN-0332,2024-04-27,Mogadishu,Hodan,IDP,Local Integration,Assessment,11,Female,Transitional,No,None,2.305,45.2539
+BEN-0333,2024-06-14,Baidoa,Buur Hakaba,IDP,Relocation,Assessment,7,Female,Permanent,No,None,2.4091,43.7033
+BEN-0334,2023-05-26,Dollow,Dollow Town,IDP,Relocation,Achieved,9,Male,Permanent,Yes,Complete,4.2984,41.8709
+BEN-0335,2023-11-12,Dollow,Dollow Town,Returnee,Local Integration,Assessment,9,Male,Permanent,No,Partial,4.0475,42.3449
+BEN-0336,2023-11-08,Garowe,Garowe Central,IDP,Local Integration,Achieved,9,Female,Permanent,No,Partial,8.2259,48.559
+BEN-0337,2024-09-02,Kismayo,Kismayo Central,Host Community,Relocation,Achieved,7,Male,Permanent,Yes,Complete,-0.2017,42.5828
+BEN-0338,2023-03-13,Garowe,Garowe Central,IDP,Local Integration,Assessment,1,Female,Transitional,Yes,Partial,8.1206,48.2717
+BEN-0339,2024-04-22,Kismayo,Kismayo Central,IDP,Local Integration,Achieved,4,Female,Permanent,Yes,Complete,-0.206,42.2648
+BEN-0340,2023-12-01,Kismayo,Kismayo Central,Host Community,Return,Assessment,8,Male,Transitional,No,None,-0.1023,42.4779
+BEN-0341,2023-11-12,Kismayo,Kismayo Central,Returnee,Local Integration,Achieved,2,Male,Transitional,No,Complete,-0.1925,42.824
+BEN-0342,2023-06-28,Baidoa,Buur Hakaba,Host Community,Local Integration,Assessment,3,Male,Transitional,No,Partial,2.3022,43.5082
+BEN-0343,2024-10-16,Mogadishu,Wadajir,Host Community,Local Integration,Planning,2,Female,Permanent,No,Complete,2.105,45.4824
+BEN-0344,2024-06-15,Kismayo,Kismayo Central,IDP,Relocation,Implementation,6,Male,Permanent,Yes,Partial,-0.084,42.5578
+BEN-0345,2023-08-26,Mogadishu,Yaqshid,Host Community,Relocation,Implementation,6,Male,Emergency,No,None,1.946,45.2347
+BEN-0346,2023-02-24,Mogadishu,Yaqshid,IDP,Relocation,Assessment,12,Male,Transitional,No,Partial,2.1151,45.3909
+BEN-0347,2024-06-18,Baidoa,Dinsor,Returnee,Relocation,Assessment,2,Male,Emergency,No,Partial,2.628,43.5747
+BEN-0348,2023-08-18,Mogadishu,Yaqshid,IDP,Relocation,Assessment,12,Male,Emergency,No,Complete,2.0668,45.3944
+BEN-0349,2023-12-20,Baidoa,Dinsor,IDP,Return,Assessment,9,Male,Emergency,No,None,2.5463,43.364
+BEN-0350,2024-04-20,Garowe,Garowe Central,Returnee,Relocation,Planning,11,Female,Emergency,Yes,Complete,8.652,48.4291
+BEN-0351,2023-03-30,Garowe,Garowe Central,IDP,Return,Planning,5,Male,Transitional,Yes,Complete,8.559,48.5359
+BEN-0352,2023-06-24,Dollow,Luuq,Host Community,Local Integration,Assessment,11,Male,Transitional,No,Complete,4.3766,41.7852
+BEN-0353,2024-08-05,Kismayo,Badhadhe,IDP,Return,Assessment,7,Female,Emergency,No,Complete,-0.0838,42.2521
+BEN-0354,2024-01-02,Garowe,Garowe Central,IDP,Relocation,Achieved,3,Male,Permanent,Yes,Partial,8.2882,48.6335
+BEN-0355,2024-08-17,Garowe,Burtinle,IDP,Relocation,Achieved,11,Male,Permanent,Yes,Partial,8.222,48.2933
+BEN-0356,2023-12-19,Kismayo,Kismayo Central,IDP,Local Integration,Achieved,5,Female,Permanent,Yes,Partial,-0.5397,42.5938
+BEN-0357,2024-10-07,Baidoa,Baidoa Central,IDP,Local Integration,Implementation,7,Male,Permanent,No,Partial,2.3254,43.6201
+BEN-0358,2024-11-01,Baidoa,Buur Hakaba,Returnee,Local Integration,Planning,8,Male,Transitional,No,Partial,2.2824,43.4826
+BEN-0359,2024-09-27,Kismayo,Badhadhe,IDP,Local Integration,Assessment,12,Female,Permanent,No,None,-0.3272,42.3509
+BEN-0360,2024-06-17,Baidoa,Dinsor,IDP,Relocation,Implementation,5,Female,Emergency,No,None,2.1799,43.3609
+BEN-0361,2024-02-20,Garowe,Burtinle,IDP,Local Integration,Assessment,2,Male,Transitional,No,Complete,8.4977,48.2737
+BEN-0362,2024-10-04,Kismayo,Kismayo Central,IDP,Local Integration,Planning,10,Female,Emergency,No,None,-0.2606,42.7542
+BEN-0363,2023-02-25,Mogadishu,Yaqshid,IDP,Relocation,Assessment,4,Male,Emergency,No,Partial,2.1861,45.5817
+BEN-0364,2024-05-09,Mogadishu,Yaqshid,Returnee,Return,Achieved,9,Female,Permanent,No,Partial,2.2915,45.235
+BEN-0365,2024-02-04,Kismayo,Badhadhe,Returnee,Local Integration,Implementation,7,Male,Emergency,No,Complete,-0.311,42.5875
+BEN-0366,2024-05-27,Garowe,Burtinle,Returnee,Return,Achieved,2,Female,Permanent,Yes,Partial,8.3171,48.7051
+BEN-0367,2024-09-22,Kismayo,Kismayo Central,IDP,Local Integration,Planning,11,Male,Transitional,No,None,-0.5681,42.3398
+BEN-0368,2024-03-10,Dollow,Dollow Town,IDP,Local Integration,Assessment,3,Male,Emergency,No,Complete,4.2378,42.1551
+BEN-0369,2023-07-04,Garowe,Garowe Central,IDP,Local Integration,Implementation,11,Male,Transitional,No,Complete,8.6399,48.2726
+BEN-0370,2024-05-11,Kismayo,Kismayo Central,Returnee,Local Integration,Achieved,3,Female,Permanent,No,Partial,-0.5282,42.6093
+BEN-0371,2024-04-23,Garowe,Burtinle,Host Community,Return,Assessment,2,Male,Transitional,Yes,Partial,8.206,48.5959
+BEN-0372,2024-03-19,Mogadishu,Yaqshid,IDP,Return,Assessment,1,Female,Transitional,No,Complete,2.2627,45.3208
+BEN-0373,2024-09-23,Garowe,Garowe Central,Host Community,Return,Achieved,7,Male,Permanent,No,Complete,8.1613,48.5801
+BEN-0374,2024-05-22,Baidoa,Dinsor,Returnee,Local Integration,Achieved,7,Male,Permanent,Yes,Complete,2.4526,43.4874
+BEN-0375,2023-04-10,Kismayo,Badhadhe,IDP,Relocation,Planning,12,Male,Emergency,No,None,-0.1987,42.7915
+BEN-0376,2023-08-13,Garowe,Garowe Central,IDP,Relocation,Planning,11,Female,Emergency,No,None,8.4173,48.4095
+BEN-0377,2024-01-24,Kismayo,Badhadhe,Host Community,Local Integration,Achieved,9,Female,Permanent,Yes,Partial,-0.1452,42.4995
+BEN-0378,2023-10-01,Dollow,Dollow Town,IDP,Local Integration,Achieved,11,Male,Permanent,Yes,Complete,4.1054,42.0996
+BEN-0379,2023-04-27,Mogadishu,Wadajir,IDP,Relocation,Planning,11,Female,Permanent,No,Complete,2.2168,45.5877
+BEN-0380,2023-04-18,Baidoa,Baidoa Central,IDP,Relocation,Implementation,5,Male,Transitional,Yes,None,2.3682,43.7312
+BEN-0381,2024-02-29,Kismayo,Kismayo Central,Host Community,Local Integration,Achieved,11,Male,Permanent,Yes,Partial,-0.2928,42.6801
+BEN-0382,2024-06-28,Dollow,Dollow Town,IDP,Local Integration,Assessment,12,Male,Permanent,No,Complete,4.0043,42.1608
+BEN-0383,2024-11-15,Garowe,Garowe Central,IDP,Local Integration,Assessment,11,Male,Transitional,No,Partial,8.5098,48.4003
+BEN-0384,2023-03-26,Dollow,Dollow Town,IDP,Local Integration,Achieved,6,Male,Permanent,Yes,Complete,4.1939,42.2089
+BEN-0385,2024-03-03,Mogadishu,Yaqshid,Host Community,Return,Planning,2,Female,Emergency,No,Partial,2.3247,45.2911
+BEN-0386,2024-06-23,Baidoa,Dinsor,IDP,Local Integration,Achieved,8,Male,Permanent,No,Complete,2.3113,43.9179
+BEN-0387,2023-02-12,Kismayo,Badhadhe,Returnee,Return,Planning,7,Male,Emergency,No,None,-0.2492,42.7833
+BEN-0388,2023-11-05,Garowe,Garowe Central,IDP,Relocation,Achieved,9,Male,Permanent,Yes,Complete,8.5259,48.3425
+BEN-0389,2023-10-17,Dollow,Luuq,IDP,Local Integration,Planning,4,Male,Emergency,No,None,4.0954,42.3033
+BEN-0390,2024-10-09,Mogadishu,Hodan,IDP,Local Integration,Assessment,11,Male,Emergency,No,None,1.8686,45.168
+BEN-0391,2023-02-27,Garowe,Garowe Central,Returnee,Local Integration,Implementation,3,Female,Permanent,No,Partial,8.5639,48.5094
+BEN-0392,2023-03-11,Kismayo,Badhadhe,Host Community,Relocation,Planning,6,Male,Permanent,No,None,-0.5249,42.5914
+BEN-0393,2024-04-30,Mogadishu,Wadajir,IDP,Return,Assessment,2,Male,Emergency,No,Partial,2.3328,45.4371
+BEN-0394,2023-10-17,Kismayo,Badhadhe,Returnee,Local Integration,Planning,12,Male,Transitional,No,None,-0.5459,42.4031
+BEN-0395,2023-05-29,Kismayo,Badhadhe,Host Community,Local Integration,Assessment,7,Male,Transitional,No,None,-0.4904,42.3533
+BEN-0396,2024-05-13,Mogadishu,Hodan,IDP,Local Integration,Planning,9,Female,Transitional,No,None,2.2269,45.4613
+BEN-0397,2024-08-18,Kismayo,Badhadhe,IDP,Relocation,Assessment,5,Male,Emergency,Yes,None,-0.4782,42.5827
+BEN-0398,2024-01-18,Baidoa,Buur Hakaba,Host Community,Local Integration,Planning,6,Female,Emergency,Yes,Partial,2.5815,43.5056
+BEN-0399,2024-07-19,Garowe,Garowe Central,IDP,Local Integration,Planning,12,Male,Transitional,No,Complete,8.4515,48.5744
+BEN-0400,2023-06-12,Baidoa,Buur Hakaba,IDP,Local Integration,Planning,2,Male,Permanent,No,Complete,2.5029,43.628
+BEN-0401,2023-11-09,Mogadishu,Wadajir,IDP,Relocation,Planning,10,Female,Transitional,No,Partial,1.8838,45.2083
+BEN-0402,2023-05-23,Dollow,Luuq,IDP,Local Integration,Achieved,4,Male,Permanent,Yes,Complete,3.9837,42.2792
+BEN-0403,2024-05-13,Dollow,Dollow Town,Host Community,Return,Assessment,2,Male,Transitional,Yes,Complete,3.9406,42.3288
+BEN-0404,2024-02-18,Garowe,Garowe Central,IDP,Local Integration,Assessment,3,Male,Transitional,No,Partial,8.156,48.7435
+BEN-0405,2023-12-14,Garowe,Garowe Central,Returnee,Relocation,Achieved,12,Female,Permanent,Yes,Complete,8.1225,48.5826
+BEN-0406,2024-10-27,Mogadishu,Yaqshid,Host Community,Relocation,Implementation,8,Female,Permanent,No,Partial,2.1055,45.3968
+BEN-0407,2023-10-08,Mogadishu,Hodan,IDP,Local Integration,Assessment,6,Male,Emergency,Yes,Complete,2.012,45.2377
+BEN-0408,2024-05-17,Dollow,Dollow Town,IDP,Return,Planning,1,Female,Transitional,Yes,Complete,4.296,42.0619
+BEN-0409,2024-02-23,Kismayo,Kismayo Central,IDP,Local Integration,Achieved,7,Male,Permanent,Yes,Complete,-0.4112,42.5817
+BEN-0410,2024-10-03,Kismayo,Kismayo Central,IDP,Local Integration,Achieved,7,Male,Permanent,Yes,Complete,-0.4049,42.3891
+BEN-0411,2024-04-25,Baidoa,Baidoa Central,Host Community,Relocation,Planning,6,Male,Permanent,Yes,Partial,2.2167,43.4159
+BEN-0412,2023-04-29,Mogadishu,Hodan,IDP,Local Integration,Assessment,2,Male,Transitional,Yes,None,2.3287,45.0315
+BEN-0413,2024-06-08,Baidoa,Buur Hakaba,IDP,Relocation,Achieved,3,Male,Transitional,Yes,Complete,2.265,43.6018
+BEN-0414,2023-07-30,Kismayo,Badhadhe,IDP,Relocation,Assessment,8,Male,Emergency,No,None,-0.6154,42.5275
+BEN-0415,2024-07-01,Baidoa,Baidoa Central,IDP,Relocation,Planning,11,Female,Transitional,Yes,Partial,2.4112,43.8123
+BEN-0416,2023-10-01,Baidoa,Dinsor,Returnee,Local Integration,Assessment,4,Female,Emergency,Yes,None,2.6972,43.6623
+BEN-0417,2024-09-04,Dollow,Luuq,IDP,Relocation,Assessment,12,Male,Emergency,No,None,3.8923,42.2433
+BEN-0418,2023-06-25,Garowe,Garowe Central,Returnee,Return,Achieved,6,Female,Permanent,Yes,Partial,8.3282,48.2382
+BEN-0419,2024-05-28,Mogadishu,Yaqshid,IDP,Local Integration,Implementation,4,Male,Transitional,No,Partial,2.0687,45.0826
+BEN-0420,2023-02-24,Dollow,Luuq,Returnee,Relocation,Implementation,3,Female,Transitional,No,None,4.3179,41.9171
+BEN-0421,2024-09-19,Kismayo,Badhadhe,Host Community,Local Integration,Assessment,5,Male,Permanent,No,None,-0.2188,42.4106
+BEN-0422,2024-06-16,Garowe,Burtinle,Returnee,Local Integration,Assessment,6,Female,Transitional,Yes,Complete,8.3778,48.6501
+BEN-0423,2023-07-28,Baidoa,Dinsor,Host Community,Relocation,Implementation,6,Male,Emergency,No,Complete,2.715,43.8411
+BEN-0424,2023-02-28,Kismayo,Kismayo Central,IDP,Local Integration,Assessment,4,Male,Emergency,No,None,-0.6004,42.6407
+BEN-0425,2024-05-30,Baidoa,Dinsor,Host Community,Local Integration,Assessment,12,Male,Transitional,No,None,2.5198,43.5829
+BEN-0426,2023-04-06,Baidoa,Baidoa Central,Returnee,Return,Planning,1,Female,Transitional,No,Partial,2.5281,43.9067
+BEN-0427,2023-04-04,Kismayo,Kismayo Central,IDP,Return,Assessment,4,Male,Emergency,No,Complete,-0.2176,42.7461
+BEN-0428,2024-08-08,Garowe,Garowe Central,Host Community,Relocation,Achieved,6,Female,Transitional,No,Complete,8.4474,48.753
+BEN-0429,2023-07-18,Dollow,Luuq,Host Community,Relocation,Implementation,10,Male,Transitional,No,None,4.413,41.8668
+BEN-0430,2024-01-30,Kismayo,Badhadhe,Returnee,Relocation,Achieved,4,Male,Transitional,No,Complete,-0.3282,42.8435
+BEN-0431,2024-02-25,Garowe,Burtinle,IDP,Return,Planning,3,Male,Permanent,No,None,8.3214,48.4559
+BEN-0432,2023-12-03,Baidoa,Buur Hakaba,IDP,Local Integration,Implementation,10,Male,Permanent,No,Complete,2.7253,43.4786
+BEN-0433,2023-10-13,Baidoa,Baidoa Central,IDP,Local Integration,Assessment,10,Male,Transitional,Yes,Partial,2.4109,43.4434
+BEN-0434,2024-05-23,Garowe,Garowe Central,IDP,Relocation,Achieved,10,Female,Permanent,Yes,Complete,8.546,48.6186
+BEN-0435,2023-04-05,Kismayo,Kismayo Central,IDP,Local Integration,Planning,4,Female,Transitional,Yes,Partial,-0.2197,42.5912
+BEN-0436,2023-03-11,Garowe,Garowe Central,IDP,Return,Planning,6,Female,Permanent,Yes,Complete,8.4857,48.5638
+BEN-0437,2024-02-21,Mogadishu,Hodan,Returnee,Return,Assessment,6,Male,Transitional,Yes,None,1.7772,45.4571
+BEN-0438,2024-02-27,Dollow,Dollow Town,Host Community,Relocation,Achieved,9,Male,Transitional,Yes,Partial,4.2122,41.9242
+BEN-0439,2024-10-06,Dollow,Luuq,Host Community,Local Integration,Assessment,6,Female,Emergency,No,Partial,4.2746,41.8844
+BEN-0440,2024-01-24,Garowe,Garowe Central,IDP,Local Integration,Planning,1,Male,Transitional,No,Complete,8.1729,48.4326
+BEN-0441,2024-04-11,Mogadishu,Wadajir,Host Community,Local Integration,Planning,11,Male,Emergency,Yes,None,2.1166,45.6123
+BEN-0442,2023-03-11,Mogadishu,Yaqshid,IDP,Local Integration,Planning,2,Male,Emergency,No,Partial,2.2586,45.0856
+BEN-0443,2024-07-18,Dollow,Luuq,IDP,Local Integration,Implementation,8,Female,Permanent,No,Partial,3.8969,41.8921
+BEN-0444,2024-09-02,Mogadishu,Yaqshid,Host Community,Return,Planning,4,Female,Emergency,No,None,2.1662,45.0292
+BEN-0445,2023-01-23,Garowe,Burtinle,IDP,Relocation,Achieved,6,Male,Permanent,No,Complete,8.1373,48.5774
+BEN-0446,2023-09-08,Baidoa,Buur Hakaba,Returnee,Return,Planning,3,Male,Permanent,Yes,Complete,2.6551,43.7393
+BEN-0447,2023-02-24,Garowe,Burtinle,IDP,Local Integration,Planning,3,Male,Transitional,No,Partial,8.4418,48.612
+BEN-0448,2024-06-11,Kismayo,Badhadhe,IDP,Return,Achieved,9,Male,Permanent,Yes,Complete,-0.445,42.4268
+BEN-0449,2023-06-04,Mogadishu,Hodan,IDP,Relocation,Implementation,4,Female,Permanent,No,None,1.952,45.2539
+BEN-0450,2023-12-18,Mogadishu,Wadajir,Returnee,Local Integration,Assessment,4,Male,Permanent,No,Complete,2.3292,45.564
+BEN-0451,2023-06-12,Kismayo,Kismayo Central,Host Community,Local Integration,Planning,12,Male,Emergency,No,Complete,-0.4002,42.7908
+BEN-0452,2023-02-14,Mogadishu,Wadajir,IDP,Relocation,Planning,11,Female,Transitional,No,Partial,2.2506,45.1055
+BEN-0453,2023-07-23,Kismayo,Kismayo Central,IDP,Local Integration,Implementation,10,Male,Permanent,Yes,Complete,-0.1907,42.3095
+BEN-0454,2024-05-17,Mogadishu,Yaqshid,IDP,Relocation,Achieved,7,Male,Permanent,Yes,Complete,1.7626,45.0659
+BEN-0455,2024-03-08,Dollow,Dollow Town,IDP,Local Integration,Planning,2,Male,Emergency,Yes,None,3.9816,41.9025
+BEN-0456,2023-09-24,Dollow,Luuq,Returnee,Relocation,Assessment,10,Female,Transitional,No,Partial,4.296,42.2868
+BEN-0457,2023-02-27,Garowe,Garowe Central,IDP,Relocation,Achieved,9,Female,Transitional,Yes,Complete,8.4178,48.4555
+BEN-0458,2023-11-22,Baidoa,Baidoa Central,IDP,Relocation,Assessment,1,Female,Transitional,No,Partial,2.3094,43.5885
+BEN-0459,2023-04-17,Garowe,Garowe Central,Host Community,Return,Assessment,7,Male,Permanent,Yes,Complete,8.3835,48.5722
+BEN-0460,2023-08-09,Kismayo,Badhadhe,Returnee,Return,Planning,2,Female,Emergency,Yes,None,-0.6433,42.5176
+BEN-0461,2024-06-21,Dollow,Luuq,Host Community,Local Integration,Planning,3,Male,Permanent,Yes,Partial,3.9345,42.1911
+BEN-0462,2023-03-08,Garowe,Garowe Central,Returnee,Local Integration,Achieved,3,Male,Permanent,No,Complete,8.2027,48.2713
+BEN-0463,2023-01-27,Mogadishu,Hodan,Returnee,Relocation,Planning,4,Male,Emergency,No,Complete,1.749,45.4774
+BEN-0464,2024-09-21,Garowe,Burtinle,Host Community,Return,Assessment,11,Female,Permanent,No,Partial,8.3776,48.4496
+BEN-0465,2024-01-07,Mogadishu,Hodan,IDP,Local Integration,Assessment,6,Male,Permanent,No,Complete,1.8578,45.0512
+BEN-0466,2023-11-02,Baidoa,Baidoa Central,Host Community,Local Integration,Planning,2,Male,Permanent,Yes,Partial,2.3849,43.4566
+BEN-0467,2024-03-27,Kismayo,Badhadhe,Host Community,Return,Planning,12,Male,Transitional,Yes,None,-0.1197,42.7376
+BEN-0468,2024-10-02,Kismayo,Badhadhe,IDP,Return,Implementation,12,Female,Permanent,No,None,-0.3434,42.6629
+BEN-0469,2023-10-07,Garowe,Burtinle,Host Community,Local Integration,Assessment,9,Female,Permanent,No,Complete,8.3616,48.6932
+BEN-0470,2023-09-10,Dollow,Luuq,IDP,Local Integration,Assessment,11,Male,Emergency,No,None,4.3681,42.2969
+BEN-0471,2023-12-22,Mogadishu,Yaqshid,IDP,Local Integration,Assessment,2,Male,Emergency,No,Partial,2.3463,45.2666
+BEN-0472,2023-12-22,Kismayo,Badhadhe,IDP,Relocation,Achieved,3,Male,Permanent,Yes,Complete,-0.198,42.3137
+BEN-0473,2024-05-14,Kismayo,Badhadhe,IDP,Local Integration,Planning,6,Male,Emergency,No,Partial,-0.1048,42.5329
+BEN-0474,2023-12-04,Dollow,Dollow Town,Host Community,Return,Assessment,2,Male,Permanent,No,Partial,4.3844,41.9463
+BEN-0475,2024-07-15,Kismayo,Kismayo Central,IDP,Relocation,Assessment,12,Male,Permanent,No,None,-0.4547,42.4705
+BEN-0476,2023-09-15,Baidoa,Buur Hakaba,IDP,Relocation,Planning,3,Male,Emergency,No,Complete,2.383,43.6479
+BEN-0477,2024-04-13,Kismayo,Kismayo Central,Host Community,Return,Planning,6,Male,Permanent,Yes,None,-0.1915,42.7934
+BEN-0478,2023-04-25,Garowe,Burtinle,Host Community,Local Integration,Assessment,12,Female,Emergency,No,Partial,8.5707,48.2705
+BEN-0479,2024-09-14,Baidoa,Baidoa Central,IDP,Local Integration,Planning,11,Female,Emergency,No,None,2.3213,43.3761
+BEN-0480,2023-08-17,Kismayo,Kismayo Central,IDP,Local Integration,Assessment,6,Male,Transitional,No,Partial,-0.3117,42.4327
+BEN-0481,2023-01-30,Baidoa,Buur Hakaba,Host Community,Return,Assessment,6,Male,Permanent,No,Partial,2.2243,43.5139
+BEN-0482,2023-07-09,Mogadishu,Yaqshid,IDP,Local Integration,Implementation,1,Male,Transitional,No,Complete,2.2293,45.3626
+BEN-0483,2024-02-11,Baidoa,Buur Hakaba,IDP,Return,Planning,10,Female,Transitional,No,None,2.6767,43.38
+BEN-0484,2024-07-14,Dollow,Luuq,IDP,Relocation,Implementation,8,Male,Emergency,No,None,4.0708,42.2572
+BEN-0485,2024-05-05,Dollow,Luuq,Returnee,Local Integration,Assessment,7,Male,Permanent,No,Partial,4.294,42.1928
+BEN-0486,2024-05-15,Kismayo,Badhadhe,IDP,Local Integration,Planning,6,Female,Transitional,No,None,-0.3862,42.2636
+BEN-0487,2023-05-04,Garowe,Garowe Central,IDP,Return,Planning,10,Male,Permanent,No,Partial,8.4102,48.4279
+BEN-0488,2024-05-22,Mogadishu,Yaqshid,Returnee,Return,Planning,10,Male,Permanent,No,Partial,1.8931,45.1136
+BEN-0489,2024-08-24,Garowe,Garowe Central,Returnee,Return,Implementation,8,Male,Transitional,Yes,Complete,8.2093,48.5863
+BEN-0490,2024-09-16,Kismayo,Badhadhe,Returnee,Local Integration,Planning,3,Female,Emergency,Yes,None,-0.6164,42.3106
+BEN-0491,2023-11-09,Baidoa,Baidoa Central,Returnee,Relocation,Assessment,11,Male,Transitional,No,Partial,2.5312,43.6215
+BEN-0492,2024-10-02,Dollow,Luuq,Host Community,Relocation,Assessment,9,Male,Transitional,No,None,4.4775,42.1163
+BEN-0493,2023-05-07,Baidoa,Dinsor,IDP,Return,Assessment,11,Male,Transitional,No,Complete,2.4707,43.9369
+BEN-0494,2023-07-11,Dollow,Luuq,Returnee,Local Integration,Assessment,5,Female,Transitional,Yes,Partial,4.1122,42.0938
+BEN-0495,2023-06-11,Mogadishu,Hodan,Returnee,Relocation,Assessment,10,Male,Transitional,No,Partial,1.7539,45.4072
+BEN-0496,2024-04-19,Garowe,Garowe Central,Returnee,Local Integration,Assessment,8,Female,Permanent,No,None,8.378,48.439
+BEN-0497,2024-07-27,Mogadishu,Yaqshid,Host Community,Local Integration,Assessment,12,Male,Emergency,No,Complete,2.0479,45.2647
+BEN-0498,2023-06-09,Baidoa,Dinsor,Host Community,Local Integration,Planning,10,Male,Permanent,No,None,2.4236,43.764
+BEN-0499,2023-04-04,Mogadishu,Wadajir,Host Community,Local Integration,Implementation,1,Male,Emergency,No,Partial,2.1253,45.4164
+BEN-0500,2024-01-11,Dollow,Luuq,IDP,Local Integration,Assessment,5,Female,Emergency,No,Complete,4.2277,41.9656
