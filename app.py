@@ -441,70 +441,73 @@ def main():
         </p>
         """, unsafe_allow_html=True)
         
-        # Define indicators with targets
-        total_target = 500  # Adjust based on your programme targets
-        
+        # Derive targets from actual data
+        total_target = len(df)  # Total programme beneficiaries (unfiltered)
+        filtered_total = kpis['total_beneficiaries']
+        total_regions = df['region'].nunique()
+        total_districts = df['district'].nunique()
+
         col1, col2 = st.columns(2)
-        
+
         with col1:
             st.markdown("#### Effectiveness Indicators")
-            
+
             render_progress_indicator(
-                title="Solutions Achieved (Target: 100)",
+                title=f"Solutions Achieved (Target: {filtered_total:,})",
                 current=kpis['solutions_achieved'],
-                target=100,
+                target=filtered_total,
                 color="#27AE60"
             )
-            
+
             render_progress_indicator(
-                title="Livelihood Support Provided (Target: 300)",
+                title=f"Livelihood Support Provided (Target: {filtered_total:,})",
                 current=kpis['livelihood_support_count'],
-                target=300,
+                target=filtered_total,
                 color="#3498DB"
             )
-            
+
             render_progress_indicator(
-                title="Complete Documentation (Target: 250)",
+                title=f"Complete Documentation (Target: {filtered_total:,})",
                 current=kpis['complete_documentation'],
-                target=250,
+                target=filtered_total,
                 color="#9B59B6"
             )
-            
+
             render_progress_indicator(
-                title="Permanent Shelter (Target: 80)",
+                title=f"Permanent Shelter (Target: {filtered_total:,})",
                 current=kpis['permanent_shelter'],
-                target=80,
+                target=filtered_total,
                 color="#1ABC9C"
             )
-        
+
         with col2:
             st.markdown("#### Coverage Indicators")
-            
+
             render_progress_indicator(
-                title=f"Total Beneficiaries Reached (Target: {total_target})",
+                title=f"Total Beneficiaries Reached (Target: {total_target:,})",
                 current=kpis['total_beneficiaries'],
                 target=total_target,
                 color="#3498DB"
             )
-            
+
             render_progress_indicator(
                 title="Female-Headed Households (Target: 40%)",
                 current=kpis['female_hoh_percentage'] * 100,
                 target=40,
                 color="#E74C3C"
             )
-            
+
             render_progress_indicator(
-                title="Regions Covered (Target: 5)",
+                title=f"Regions Covered (Target: {total_regions})",
                 current=kpis['regions_covered'],
-                target=5,
+                target=total_regions,
                 color="#F39C12"
             )
-            
+
             render_progress_indicator(
-                title="Districts Covered (Target: 10)",
+                title=f"Districts Covered (Target: {total_districts})",
                 current=kpis['districts_covered'],
-                target=10,
+                target=total_districts,
                 color="#2ECC71"
             )
         

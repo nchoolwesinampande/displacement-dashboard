@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:\\\\Users\\\\user\\\\Documents\\\\antigravity\\\\displacement-solutions-dashboard\\\\venv\\\\Scripts\\\\streamlit.exe\" run \"C:\\\\Users\\\\user\\\\Documents\\\\antigravity\\\\displacement-solutions-dashboard\\\\app.py\")",
+      "Bash(\"C:\\\\Users\\\\user\\\\Documents\\\\antigravity\\\\displacement-solutions-dashboard\\\\venv\\\\Scripts\\\\pip.exe\" list)",
+      "Bash(findstr:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)",
+      "Bash(powershell -Command \"\\(Invoke-WebRequest -Uri http://localhost:8501 -UseBasicParsing\\).StatusCode\")",
+      "Bash(powershell -Command \"Start-Sleep -Seconds 3; \\(Invoke-WebRequest -Uri ''http://localhost:8501/_stcore/health'' -UseBasicParsing\\).Content\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Displacement Solutions Dashboard\n\nStreamlit dashboard for visualizing beneficiary progress along durable solutions pathways. Ready for Streamlit Community Cloud deployment.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh auth status:*)",
+      "Bash(git config:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd matplotlib dependency required by pandas Styler.background_gradient\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(python -c:*)"
+    ]
+  }
+}
