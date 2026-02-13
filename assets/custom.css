@@ -12,7 +12,8 @@
 /* Hide Streamlit branding */
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
-header {visibility: hidden;}
+/* Keep the header visible for the sidebar toggle, but hide the toolbar actions */
+[data-testid="stHeader"] [data-testid="stToolbar"] {visibility: hidden;}
 
 /* Sidebar Styling */
 .css-1d391kg {
