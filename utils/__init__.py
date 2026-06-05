@@ -1,5 +1,5 @@
 """
-Utils package for the Displacement Solutions Dashboard.
+Utils package for the Beneficiary Solutions Dashboard.
 Contains data processing and utility functions.
 """
 

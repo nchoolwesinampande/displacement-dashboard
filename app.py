@@ -1,578 +1,222 @@
 """
-Displacement Solutions Dashboard
-Main Streamlit application for visualizing beneficiary progress along durable solutions pathways.
+Beneficiary Solutions Dashboard
+Monitoring beneficiary progress along durable solutions pathways.
 
+Clean, minimal Streamlit interface.
 Author: Nchoolwe Progress Sinampande
 """
 
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
-from streamlit_folium import st_folium
 import os
+import streamlit as st
 
-# Import custom components
-from components.sankey_diagram import create_sankey, create_simple_sankey
+from components.sankey_diagram import create_sankey
 from components.map_visualization import create_cluster_map, create_heatmap
-from components.indicator_cards import render_kpi_card, render_kpi_row, render_progress_indicator
+from components.indicator_cards import render_metric_row, render_target_bar
 from components.filters import render_sidebar_filters, apply_filters, render_active_filters
-
-# Import utilities
-from utils.data_processing import (
-    load_and_process_data,
-    calculate_kpis,
-    get_monthly_trends,
-    get_regional_summary,
-    get_pathway_progress
+from components.charts import (
+    funnel_chart, pathway_distribution, status_distribution,
+    shelter_distribution, documentation_distribution, trend_chart,
+    stage_composition,
 )
+from utils.data_processing import (
+    load_and_process_data, calculate_kpis, get_monthly_trends,
+    get_regional_summary,
+)
+from utils.theme import PRIMARY, STATUS_COLORS, STAGE_COLORS, PATHWAY_COLORS
 
+from streamlit_folium import st_folium
 
-# Page configuration
 st.set_page_config(
-    page_title="Displacement Solutions Dashboard",
+    page_title="Beneficiary Solutions Dashboard",
     page_icon="◆",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
-# Load custom CSS
+PLOTLY_CONFIG = {"displayModeBar": False, "responsive": True}
+
+
 def load_css():
-    css_file = os.path.join(os.path.dirname(__file__), 'assets', 'custom.css')
+    css_file = os.path.join(os.path.dirname(__file__), "assets", "custom.css")
     if os.path.exists(css_file):
         with open(css_file) as f:
-            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-load_css()
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-# Cache data loading
 @st.cache_data
 def load_data():
-    """Load and cache the dataset."""
-    data_path = os.path.join(os.path.dirname(__file__), 'data', 'sample_data.csv')
-    return load_and_process_data(data_path)
+    path = os.path.join(os.path.dirname(__file__), "data", "sample_data.csv")
+    return load_and_process_data(path)
+
+
+def section(title: str, sub: str = "") -> None:
+    """Render a quiet section heading."""
+    sub_html = f'<div class="section-sub">{sub}</div>' if sub else '<div style="height:12px"></div>'
+    st.markdown(f'<div class="section-title">{title}</div>{sub_html}', unsafe_allow_html=True)
 
 
 def main():
-    """Main application function."""
-    
-    # Load data
+    load_css()
     df = load_data()
-    
-    # Render sidebar filters
+
     filters = render_sidebar_filters(df)
-    
-    # Apply filters
-    filtered_df = apply_filters(df, filters)
-    
-    # Calculate KPIs
-    kpis = calculate_kpis(filtered_df)
-    
-    # Main content area
-    st.markdown("""
-    <div style="margin-bottom: 20px;">
-        <h1 style="color: #2C3E50; margin-bottom: 5px; font-weight: 600;">
-            Displacement Solutions Dashboard
-        </h1>
-        <p style="color: #7F8C8D; font-size: 16px;">
-            Monitoring progress along durable solutions pathways for displaced populations
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Show active filters
+    fdf = apply_filters(df, filters)
+    kpis = calculate_kpis(fdf) if len(fdf) else None
+
+    # ---- Header ----
+    st.markdown(
+        """
+        <div style="margin-bottom:14px;">
+            <h1 style="font-size:30px;margin:0;">Beneficiary Solutions Dashboard</h1>
+            <p style="font-size:15px;color:#94A3B8;margin:6px 0 0 0;">
+                Progress along durable solutions pathways for displaced populations
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
     render_active_filters(filters)
-    
-    # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs([
-        "Overview",
-        "Geographic View", 
-        "Progress Analysis",
-        "Indicators"
+
+    if not len(fdf):
+        st.info("No records match the current filters. Adjust or reset the filters in the sidebar.")
+        return
+
+    # ---- KPI strip ----
+    achieved_pct = kpis["achievement_rate"] * 100
+    render_metric_row([
+        {"label": "Households reached", "value": kpis["total_beneficiaries"], "accent": PRIMARY},
+        {"label": "Individuals reached", "value": kpis["total_individuals"],
+         "accent": "#3B82F6", "caption": f"Avg household {kpis['avg_household_size']:.1f}"},
+        {"label": "Solutions achieved", "value": kpis["solutions_achieved"],
+         "accent": "#059669", "caption": f"{achieved_pct:.1f}% of caseload"},
+        {"label": "Female-headed HH", "value": f"{kpis['female_hoh_percentage'] * 100:.0f}",
+         "value_suffix": "%", "accent": "#8B5CF6",
+         "caption": f"{kpis['female_hoh_count']:,} households"},
     ])
-    
-    # ==================== TAB 1: OVERVIEW ====================
-    with tab1:
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # KPI Row
-        kpi_data = [
-            {
-                'title': 'Total Beneficiaries',
-                'value': kpis['total_beneficiaries'],
-                'delta': None,
-                'icon': '',
-                'color': '#3498DB'
-            },
-            {
-                'title': 'Individuals Reached',
-                'value': kpis['total_individuals'],
-                'delta': None,
-                'icon': '',
-                'color': '#9B59B6'
-            },
-            {
-                'title': 'Solutions Achieved',
-                'value': kpis['solutions_achieved'],
-                'delta': None,
-                'icon': '',
-                'color': '#27AE60'
-            },
-            {
-                'title': 'Female-Headed HH',
-                'value': kpis['female_hoh_percentage'],
-                'delta': None,
-                'icon': '',
-                'color': '#E74C3C'
-            }
-        ]
-        
-        render_kpi_row(kpi_data)
-        
-        st.markdown("<br><br>", unsafe_allow_html=True)
-        
-        # Sankey Diagram
-        st.markdown("""
-        <h3 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Beneficiary Flow Through Solutions Pathways
-        </h3>
-        """, unsafe_allow_html=True)
-        
-        sankey_fig = create_sankey(
-            filtered_df,
-            source_col='displacement_status',
-            middle_col='solutions_pathway',
-            target_col='pathway_stage',
-            title=''
+
+    st.markdown("<div style='height:26px'></div>", unsafe_allow_html=True)
+
+    tab_overview, tab_geo, tab_progress = st.tabs(["Overview", "Geography", "Progress"])
+
+    # ==================== OVERVIEW ====================
+    with tab_overview:
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        left, right = st.columns([1.05, 1], gap="large")
+        with left:
+            section("Beneficiaries by stage", "Progress funnel across the caseload")
+            st.plotly_chart(funnel_chart(fdf), width="stretch", config=PLOTLY_CONFIG)
+        with right:
+            section("By solutions pathway", "Return · Local Integration · Relocation")
+            st.plotly_chart(pathway_distribution(fdf), width="stretch", config=PLOTLY_CONFIG)
+            st.markdown("<div style='height:6px'></div>", unsafe_allow_html=True)
+            section("By displacement status", "")
+            st.plotly_chart(status_distribution(fdf), width="stretch", config=PLOTLY_CONFIG)
+
+        st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+        section("Flow to durable solutions",
+                "Displacement status → solutions pathway → pathway stage")
+        st.plotly_chart(
+            create_sankey(fdf, "displacement_status", "solutions_pathway", "pathway_stage"),
+            width="stretch", config=PLOTLY_CONFIG,
         )
-        st.plotly_chart(sankey_fig, width='stretch')
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Two column layout for additional charts
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Distribution by Solutions Pathway</h4>
-            """, unsafe_allow_html=True)
-            
-            pathway_counts = filtered_df['solutions_pathway'].value_counts()
-            fig_pathway = px.pie(
-                values=pathway_counts.values,
-                names=pathway_counts.index,
-                hole=0.4,
-                color_discrete_sequence=['#9B59B6', '#F39C12', '#1ABC9C']
-            )
-            fig_pathway.update_layout(
-                showlegend=True,
-                legend=dict(orientation="h", yanchor="bottom", y=-0.2),
-                margin=dict(t=20, b=20, l=20, r=20),
-                height=350
-            )
-            st.plotly_chart(fig_pathway, width='stretch')
-        
-        with col2:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Distribution by Displacement Status</h4>
-            """, unsafe_allow_html=True)
-            
-            status_counts = filtered_df['displacement_status'].value_counts()
-            fig_status = px.pie(
-                values=status_counts.values,
-                names=status_counts.index,
-                hole=0.4,
-                color_discrete_sequence=['#E74C3C', '#3498DB', '#2ECC71']
-            )
-            fig_status.update_layout(
-                showlegend=True,
-                legend=dict(orientation="h", yanchor="bottom", y=-0.2),
-                margin=dict(t=20, b=20, l=20, r=20),
-                height=350
-            )
-            st.plotly_chart(fig_status, width='stretch')
-    
-    # ==================== TAB 2: GEOGRAPHIC VIEW ====================
-    with tab2:
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        st.markdown("""
-        <h3 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Geographic Distribution of Beneficiaries
-        </h3>
-        """, unsafe_allow_html=True)
-        
-        # Map controls
-        map_col1, map_col2 = st.columns([3, 1])
-        
-        with map_col2:
+
+    # ==================== GEOGRAPHY ====================
+    with tab_geo:
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        section("Geographic distribution", "Each point is a registered household")
+
+        ctrl1, ctrl2, _ = st.columns([1.4, 1.4, 3])
+        with ctrl1:
             color_by = st.selectbox(
-                'Color markers by:',
-                ['solutions_pathway', 'displacement_status', 'pathway_stage'],
-                format_func=lambda x: x.replace('_', ' ').title()
+                "Colour by",
+                ["solutions_pathway", "displacement_status", "pathway_stage"],
+                format_func=lambda x: x.replace("_", " ").title(),
             )
-            
-            map_type = st.radio(
-                'Map type:',
-                ['Cluster Map', 'Heat Map'],
-                horizontal=True
-            )
-        
-        with map_col1:
-            if map_type == 'Cluster Map':
-                m = create_cluster_map(
-                    filtered_df,
-                    lat_col='latitude',
-                    lon_col='longitude',
-                    color_by=color_by,
-                    zoom_start=6
-                )
-            else:
-                m = create_heatmap(
-                    filtered_df,
-                    lat_col='latitude',
-                    lon_col='longitude',
-                    weight_col='household_size',
-                    zoom_start=6
-                )
-            
-            st_folium(m, height=500, use_container_width=True)
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Regional summary table
-        st.markdown("""
-        <h4 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Regional Summary
-        </h4>
-        """, unsafe_allow_html=True)
-        
-        regional_summary = get_regional_summary(filtered_df)
-        
-        # Style the dataframe
+        with ctrl2:
+            map_type = st.selectbox("Map type", ["Clusters", "Heatmap"])
+
+        if map_type == "Clusters":
+            m = create_cluster_map(fdf, color_by=color_by, zoom_start=6)
+        else:
+            m = create_heatmap(fdf, weight_col="household_size", zoom_start=6)
+        st_folium(m, height=500, use_container_width=True, returned_objects=[])
+
+        st.markdown("<div style='height:20px'></div>", unsafe_allow_html=True)
+        section("Regional summary", "")
+        summary = get_regional_summary(fdf).rename(columns={
+            "region": "Region", "beneficiaries": "Beneficiaries", "individuals": "Individuals",
+            "achieved": "Achieved", "livelihood_support": "Livelihood",
+            "achievement_rate": "Achievement %", "female_hoh_rate": "Female HoH %",
+        })[["Region", "Beneficiaries", "Individuals", "Achieved",
+            "Livelihood", "Achievement %", "Female HoH %"]]
         st.dataframe(
-            regional_summary.style.format({
-                'beneficiaries': '{:,.0f}',
-                'individuals': '{:,.0f}',
-                'female_hoh': '{:,.0f}',
-                'achieved': '{:,.0f}',
-                'livelihood_support': '{:,.0f}',
-                'achievement_rate': '{:.1f}%',
-                'female_hoh_rate': '{:.1f}%'
-            }).background_gradient(subset=['achievement_rate'], cmap='Greens'),
-            width='stretch',
-            hide_index=True
+            summary.style
+            .format({"Beneficiaries": "{:,.0f}", "Individuals": "{:,.0f}",
+                     "Achieved": "{:,.0f}", "Livelihood": "{:,.0f}",
+                     "Achievement %": "{:.1f}%", "Female HoH %": "{:.1f}%"})
+            .background_gradient(subset=["Achievement %"], cmap="Greens"),
+            width="stretch", hide_index=True,
         )
-    
-    # ==================== TAB 3: PROGRESS ANALYSIS ====================
-    with tab3:
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Monthly trends
-        st.markdown("""
-        <h3 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Registration Trends Over Time
-        </h3>
-        """, unsafe_allow_html=True)
-        
-        monthly_data = get_monthly_trends(filtered_df)
-        
-        fig_trends = go.Figure()
-        
-        fig_trends.add_trace(go.Bar(
-            x=monthly_data['month'],
-            y=monthly_data['value'],
-            name='Monthly Registrations',
-            marker_color='#3498DB'
-        ))
-        
-        fig_trends.add_trace(go.Scatter(
-            x=monthly_data['month'],
-            y=monthly_data['cumulative'],
-            name='Cumulative',
-            line=dict(color='#E74C3C', width=3),
-            yaxis='y2'
-        ))
-        
-        fig_trends.update_layout(
-            xaxis=dict(title='Month', tickangle=-45),
-            yaxis=dict(title='Monthly Count', side='left'),
-            yaxis2=dict(title='Cumulative', side='right', overlaying='y'),
-            legend=dict(orientation='h', yanchor='bottom', y=1.02),
-            margin=dict(t=50, b=100),
-            height=400,
-            hovermode='x unified'
-        )
-        
-        st.plotly_chart(fig_trends, width='stretch')
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Progress by pathway and region
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Progress by Region</h4>
-            """, unsafe_allow_html=True)
-            
-            region_stage = filtered_df.groupby(['region', 'pathway_stage']).size().unstack(fill_value=0)
-            stage_order = ['Assessment', 'Planning', 'Implementation', 'Achieved']
-            region_stage = region_stage.reindex(columns=[c for c in stage_order if c in region_stage.columns])
-            
-            fig_region = px.bar(
-                region_stage.reset_index().melt(id_vars='region'),
-                x='region',
-                y='value',
-                color='pathway_stage',
-                color_discrete_map={
-                    'Assessment': '#BDC3C7',
-                    'Planning': '#F39C12',
-                    'Implementation': '#3498DB',
-                    'Achieved': '#27AE60'
-                },
-                barmode='stack'
-            )
-            fig_region.update_layout(
-                xaxis_title='',
-                yaxis_title='Beneficiaries',
-                legend_title='Stage',
-                margin=dict(t=20),
-                height=400
-            )
-            st.plotly_chart(fig_region, width='stretch')
-        
-        with col2:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Progress by Solutions Pathway</h4>
-            """, unsafe_allow_html=True)
-            
-            pathway_stage = filtered_df.groupby(['solutions_pathway', 'pathway_stage']).size().unstack(fill_value=0)
-            pathway_stage = pathway_stage.reindex(columns=[c for c in stage_order if c in pathway_stage.columns])
-            
-            fig_pathway = px.bar(
-                pathway_stage.reset_index().melt(id_vars='solutions_pathway'),
-                x='solutions_pathway',
-                y='value',
-                color='pathway_stage',
-                color_discrete_map={
-                    'Assessment': '#BDC3C7',
-                    'Planning': '#F39C12',
-                    'Implementation': '#3498DB',
-                    'Achieved': '#27AE60'
-                },
-                barmode='group'
-            )
-            fig_pathway.update_layout(
-                xaxis_title='',
-                yaxis_title='Beneficiaries',
-                legend_title='Stage',
-                margin=dict(t=20),
-                height=400
-            )
-            st.plotly_chart(fig_pathway, width='stretch')
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Shelter and support analysis
-        col3, col4 = st.columns(2)
-        
-        with col3:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Shelter Status Distribution</h4>
-            """, unsafe_allow_html=True)
-            
-            shelter_counts = filtered_df['shelter_status'].value_counts()
-            fig_shelter = px.bar(
-                x=shelter_counts.index,
-                y=shelter_counts.values,
-                color=shelter_counts.index,
-                color_discrete_map={
-                    'Emergency': '#E74C3C',
-                    'Transitional': '#F39C12',
-                    'Permanent': '#27AE60'
-                }
-            )
-            fig_shelter.update_layout(
-                xaxis_title='',
-                yaxis_title='Beneficiaries',
-                showlegend=False,
-                margin=dict(t=20),
-                height=300
-            )
-            st.plotly_chart(fig_shelter, width='stretch')
-        
-        with col4:
-            st.markdown("""
-            <h4 style="color: #2C3E50;">Documentation Status</h4>
-            """, unsafe_allow_html=True)
-            
-            doc_counts = filtered_df['documentation_status'].value_counts()
-            fig_doc = px.bar(
-                x=doc_counts.index,
-                y=doc_counts.values,
-                color=doc_counts.index,
-                color_discrete_map={
-                    'None': '#E74C3C',
-                    'Partial': '#F39C12',
-                    'Complete': '#27AE60'
-                }
-            )
-            fig_doc.update_layout(
-                xaxis_title='',
-                yaxis_title='Beneficiaries',
-                showlegend=False,
-                margin=dict(t=20),
-                height=300
-            )
-            st.plotly_chart(fig_doc, width='stretch')
-    
-    # ==================== TAB 4: INDICATORS ====================
-    with tab4:
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        st.markdown("""
-        <h3 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Programme Indicators (OECD-DAC Aligned)
-        </h3>
-        <p style="color: #7F8C8D; margin-bottom: 25px;">
-            Progress tracking against key durable solutions indicators
-        </p>
-        """, unsafe_allow_html=True)
-        
-        # Derive targets from actual data
-        total_target = len(df)  # Total programme beneficiaries (unfiltered)
-        filtered_total = kpis['total_beneficiaries']
-        total_regions = df['region'].nunique()
-        total_districts = df['district'].nunique()
 
-        col1, col2 = st.columns(2)
+    # ==================== PROGRESS ====================
+    with tab_progress:
+        st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+        section("Registrations over time", "Monthly intake and cumulative reach")
+        st.plotly_chart(trend_chart(get_monthly_trends(fdf)), width="stretch", config=PLOTLY_CONFIG)
 
-        with col1:
-            st.markdown("#### Effectiveness Indicators")
+        st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+        c1, c2 = st.columns(2, gap="large")
+        with c1:
+            section("Stage by region", "")
+            st.plotly_chart(stage_composition(fdf, "region"), width="stretch", config=PLOTLY_CONFIG)
+        with c2:
+            section("Stage by pathway", "")
+            st.plotly_chart(stage_composition(fdf, "solutions_pathway"), width="stretch", config=PLOTLY_CONFIG)
 
-            render_progress_indicator(
-                title=f"Solutions Achieved (Target: {filtered_total:,})",
-                current=kpis['solutions_achieved'],
-                target=filtered_total,
-                color="#27AE60"
-            )
+        st.markdown("<div style='height:18px'></div>", unsafe_allow_html=True)
+        c3, c4 = st.columns(2, gap="large")
+        with c3:
+            section("Shelter status", "")
+            st.plotly_chart(shelter_distribution(fdf), width="stretch", config=PLOTLY_CONFIG)
+        with c4:
+            section("Documentation status", "")
+            st.plotly_chart(documentation_distribution(fdf), width="stretch", config=PLOTLY_CONFIG)
 
-            render_progress_indicator(
-                title=f"Livelihood Support Provided (Target: {filtered_total:,})",
-                current=kpis['livelihood_support_count'],
-                target=filtered_total,
-                color="#3498DB"
-            )
+        st.markdown("<div style='height:22px'></div>", unsafe_allow_html=True)
+        section("Progress against targets", "Programme planning goals, not derived from actuals")
 
-            render_progress_indicator(
-                title=f"Complete Documentation (Target: {filtered_total:,})",
-                current=kpis['complete_documentation'],
-                target=filtered_total,
-                color="#9B59B6"
-            )
+        total = kpis["total_beneficiaries"]
+        tcol1, tcol2 = st.columns(2, gap="large")
+        with tcol1:
+            st.markdown("**Effectiveness**")
+            render_target_bar("Solutions achieved (35%)", kpis["solutions_achieved"],
+                              round(total * 0.35), accent="#059669")
+            render_target_bar("Livelihood support (60%)", kpis["livelihood_support_count"],
+                              round(total * 0.60), accent="#3B82F6")
+            render_target_bar("Complete documentation (75%)", kpis["complete_documentation"],
+                              round(total * 0.75), accent="#8B5CF6")
+            render_target_bar("Permanent shelter (45%)", kpis["permanent_shelter"],
+                              round(total * 0.45), accent="#14B8A6")
+        with tcol2:
+            st.markdown("**Coverage**")
+            render_target_bar("Total beneficiaries reached", kpis["total_beneficiaries"],
+                              600, accent=PRIMARY)
+            render_target_bar("Female-headed households (40%)",
+                              kpis["female_hoh_percentage"] * 100, 40, accent="#8B5CF6", unit="%")
+            render_target_bar("Regions covered", kpis["regions_covered"],
+                              df["region"].nunique(), accent="#F59E0B")
+            render_target_bar("Districts covered", kpis["districts_covered"],
+                              df["district"].nunique(), accent="#3B82F6")
 
-            render_progress_indicator(
-                title=f"Permanent Shelter (Target: {filtered_total:,})",
-                current=kpis['permanent_shelter'],
-                target=filtered_total,
-                color="#1ABC9C"
-            )
-
-        with col2:
-            st.markdown("#### Coverage Indicators")
-
-            render_progress_indicator(
-                title=f"Total Beneficiaries Reached (Target: {total_target:,})",
-                current=kpis['total_beneficiaries'],
-                target=total_target,
-                color="#3498DB"
-            )
-
-            render_progress_indicator(
-                title="Female-Headed Households (Target: 40%)",
-                current=kpis['female_hoh_percentage'] * 100,
-                target=40,
-                color="#E74C3C"
-            )
-
-            render_progress_indicator(
-                title=f"Regions Covered (Target: {total_regions})",
-                current=kpis['regions_covered'],
-                target=total_regions,
-                color="#F39C12"
-            )
-
-            render_progress_indicator(
-                title=f"Districts Covered (Target: {total_districts})",
-                current=kpis['districts_covered'],
-                target=total_districts,
-                color="#2ECC71"
-            )
-        
-        st.markdown("<br><br>", unsafe_allow_html=True)
-        
-        # Pathway progress table
-        st.markdown("""
-        <h4 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Detailed Pathway Progress Matrix
-        </h4>
-        """, unsafe_allow_html=True)
-        
-        pathway_progress = get_pathway_progress(filtered_df)
-        
-        st.dataframe(
-            pathway_progress.style.format({
-                'Achievement Rate': '{:.1f}%'
-            }).background_gradient(subset=['Achievement Rate'], cmap='Greens'),
-            width='stretch'
-        )
-        
-        st.markdown("<br>", unsafe_allow_html=True)
-        
-        # Summary statistics
-        st.markdown("""
-        <h4 style="color: #2C3E50; margin-bottom: 15px; font-weight: 600;">
-            Key Statistics Summary
-        </h4>
-        """, unsafe_allow_html=True)
-        
-        stats_col1, stats_col2, stats_col3, stats_col4 = st.columns(4)
-        
-        with stats_col1:
-            st.metric(
-                label="Average Household Size",
-                value=f"{kpis['avg_household_size']:.1f}"
-            )
-        
-        with stats_col2:
-            st.metric(
-                label="Achievement Rate",
-                value=f"{kpis['achievement_rate']*100:.1f}%"
-            )
-        
-        with stats_col3:
-            st.metric(
-                label="Livelihood Coverage",
-                value=f"{kpis['livelihood_support_percentage']*100:.1f}%"
-            )
-        
-        with stats_col4:
-            st.metric(
-                label="Documentation Rate",
-                value=f"{kpis['documentation_rate']*100:.1f}%"
-            )
-    
-    # Footer
-    st.markdown("""
-    <div class="dashboard-footer">
-        <p>
-            Displacement Solutions Dashboard | Built with Streamlit<br>
-            Data updated: Sample Data | Developed by Nchoolwe Progress Sinampande
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div class="dashboard-footer">
+            Beneficiary Solutions Dashboard · Built with Streamlit ·
+            Developed by Nchoolwe Progress Sinampande
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 if __name__ == "__main__":

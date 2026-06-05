@@ -20,18 +20,21 @@ def load_and_process_data(filepath: str) -> pd.DataFrame:
         Processed DataFrame
     """
     
-    # Load data
-    df = pd.read_csv(filepath)
-    
+    # Load data.
+    # keep_default_na=False prevents pandas from coercing the literal string
+    # "None" (a valid documentation_status category) into NaN, which would
+    # silently drop those records from charts and filters.
+    df = pd.read_csv(filepath, keep_default_na=False, na_values=[''])
+
     # Convert date column
     df['registration_date'] = pd.to_datetime(df['registration_date'])
-    
+
     # Add derived columns
     df['registration_month'] = df['registration_date'].dt.to_period('M')
     df['registration_year'] = df['registration_date'].dt.year
     df['registration_quarter'] = df['registration_date'].dt.to_period('Q')
-    
-    # Calculate total individuals (beneficiary * household size)
+
+    # Each row is one household; household_size is the number of individuals in it.
     df['total_individuals'] = df['household_size']
     
     # Add binary columns for easier aggregation

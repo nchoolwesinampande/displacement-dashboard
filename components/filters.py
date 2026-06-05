@@ -26,23 +26,18 @@ def render_sidebar_filters(
     
     filters = {}
     
-    # Dashboard header
+    # Sidebar header
     st.sidebar.markdown("""
-    <div style="text-align: center; padding: 10px 0 20px 0;">
-        <h2 style="color: #2C3E50; margin: 0; font-weight: 600;">Solutions Dashboard</h2>
-        <p style="color: #7F8C8D; font-size: 12px; margin: 5px 0 0 0;">
-            Displacement Solutions Monitoring
-        </p>
+    <div style="padding: 4px 0 18px 0;">
+        <div style="font-size:16px;font-weight:600;color:#0F172A;">Beneficiary Solutions Dashboard</div>
+        <div style="font-size:12px;color:#94A3B8;margin-top:2px;">Durable solutions monitoring</div>
     </div>
     """, unsafe_allow_html=True)
-    
-    st.sidebar.markdown("---")
-    
+
     # Filter section header
     st.sidebar.markdown("""
-    <p style="color: #2C3E50; font-weight: 600; font-size: 14px; margin-bottom: 15px;">
-        Filter Data
-    </p>
+    <p style="color:#94A3B8;font-weight:600;font-size:11px;letter-spacing:.06em;
+              text-transform:uppercase;margin-bottom:10px;">Filters</p>
     """, unsafe_allow_html=True)
     
     # Region filter
@@ -183,21 +178,12 @@ def render_sidebar_filters(
     
     # Data summary
     st.sidebar.markdown("""
-    <div style="
-        background-color: #f0f2f5;
-        border-radius: 8px;
-        padding: 12px;
-        margin-top: 15px;
-    ">
-        <p style="color: #7F8C8D; font-size: 11px; margin: 0 0 5px 0;">
-            Data loaded from sample_data.csv
-        </p>
-        <p style="color: #2C3E50; font-size: 12px; margin: 0;">
-            Total records: <strong>{:,}</strong>
-        </p>
+    <div style="border:1px solid #E5E7EB;border-radius:10px;padding:12px 14px;margin-top:14px;">
+        <div style="color:#94A3B8;font-size:11px;margin-bottom:3px;">Source · sample_data.csv</div>
+        <div style="color:#0F172A;font-size:13px;">Total records: <strong>{:,}</strong></div>
     </div>
     """.format(len(df)), unsafe_allow_html=True)
-    
+
     return filters
 
 
@@ -303,15 +289,12 @@ def render_active_filters(filters: Dict) -> None:
             active_filters.append(f"{display_key}: {value}")
     
     if active_filters:
-        tags_html = " ".join([
-            f'<span style="background-color: #E8F4FD; color: #2980B9; padding: 4px 10px; '
-            f'border-radius: 15px; font-size: 12px; margin-right: 8px;">{f}</span>'
-            for f in active_filters
-        ])
-        
+        tags_html = " ".join(
+            f'<span class="filter-chip">{f}</span>' for f in active_filters
+        )
         st.markdown(f"""
-        <div style="margin-bottom: 15px;">
-            <span style="color: #7F8C8D; font-size: 12px; margin-right: 10px;">Active filters:</span>
+        <div style="margin:2px 0 18px 0;">
+            <span style="color:#94A3B8;font-size:12px;margin-right:8px;">Active filters</span>
             {tags_html}
         </div>
         """, unsafe_allow_html=True)

@@ -1,4 +1,4 @@
-# Displacement Solutions Dashboard
+# Beneficiary Solutions Dashboard
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)
@@ -70,15 +70,18 @@ displacement-solutions-dashboard/
 ├── requirements.txt
 ├── app.py                      # Main Streamlit application
 ├── data/
-│   └── sample_data.csv         # Sample displacement dataset
+│   ├── sample_data.csv         # Sample displacement dataset (generated)
+│   └── generate_data.py        # Reproducible, internally-coherent data generator
 ├── components/
 │   ├── __init__.py
+│   ├── charts.py               # Minimal bar / funnel / trend charts
 │   ├── sankey_diagram.py       # Sankey flow visualization
 │   ├── map_visualization.py    # Geographic mapping
-│   ├── indicator_cards.py      # KPI metric cards
+│   ├── indicator_cards.py      # KPI cards and target bars
 │   └── filters.py              # Sidebar filter controls
 ├── utils/
 │   ├── __init__.py
+│   ├── theme.py                # Design tokens + Plotly styling helper
 │   └── data_processing.py      # Data loading and processing
 └── assets/
     └── custom.css              # Custom styling
@@ -110,6 +113,15 @@ The dashboard expects data with the following columns:
 ### Adding Your Own Data
 
 Replace `data/sample_data.csv` with your own dataset following the schema above.
+
+The bundled sample is synthetic but internally coherent — solutions pathways
+respect displacement status, progress follows a realistic funnel, and shelter /
+documentation / livelihood status improve with the pathway stage. Regenerate it
+(reproducibly, via a fixed seed) with:
+
+```bash
+python data/generate_data.py
+```
 
 ### Modifying Colors
 
